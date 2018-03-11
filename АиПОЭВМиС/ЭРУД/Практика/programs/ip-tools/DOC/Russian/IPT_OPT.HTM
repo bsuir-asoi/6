@@ -1,0 +1,480 @@
+<html>
+<head>
+<meta content="text/html; charset=windows-1251" url="default.htm">
+<meta name="GENERATOR" content="KS Alex">
+<title>IP-Tools Options</title>
+<STYLE TYPE="text/css"> <!-- a:hover { color: "#00FF00"; } --> </STYLE>
+</head>
+
+<body bgcolor="#000000" text="#FFFFFF" vlink="#00FFFF" alink="#00FFFF" background="../images/ksbg2.jpg" link="#00FFFF">
+
+<p ALIGN="CENTER">
+<b>Options Dialog</b>
+
+<hr>
+<p ALIGN="CENTER">
+Все настройки программы находятся в диалоге Options.<br><br>
+
+<img src="../images/iptopt1.gif" width="666" height="309" align="center"
+ alt="ipt_opt.gif (19471 bytes)" USEMAP="#iptools" BORDER=0></p>
+<MAP NAME="iptools">
+<AREA SHAPE="rect" COORDS="20, 25, 140, 40", HREF="#Preferences" ALT="">
+<AREA SHAPE="rect" COORDS="20, 41, 140, 56", HREF="#interface"   ALT="">
+<AREA SHAPE="rect" COORDS="20, 57, 140, 72", HREF="#HTMLColors"  ALT="">
+<AREA SHAPE="rect" COORDS="20, 73, 140, 88", HREF="#Sound"       ALT="">
+<AREA SHAPE="rect" COORDS="20, 89, 140,104", HREF="#Connections" ALT="">
+<AREA SHAPE="rect" COORDS="20,105, 140,120", HREF="#NBScanner"   ALT="">
+<AREA SHAPE="rect" COORDS="20,121, 140,136", HREF="#PortScanner" ALT="">
+<AREA SHAPE="rect" COORDS="20,137, 140,152", HREF="#PingTrace"   ALT="">
+<AREA SHAPE="rect" COORDS="20,153, 140,168", HREF="#WhoIs"       ALT="">
+<AREA SHAPE="rect" COORDS="20,169, 140,184", HREF="#Lookup"      ALT="">
+<AREA SHAPE="rect" COORDS="20,185, 140,200", HREF="#IPMonitor"   ALT="">
+<AREA SHAPE="rect" COORDS="20,201, 140,216", HREF="#HostMon"     ALT="">
+<AREA SHAPE="rect" COORDS="20,217, 140,232", HREF="#ScanList"    ALT="">
+</MAP>
+
+<p align="justify">
+<div align="justify"><justify>
+<br>
+<table border="0" width="100%">
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid; border-top: 1px solid" bgcolor="#000000" background="../images/ksbg3.jpg"><strong>
+     <a name="Preferences"><font color=#00E0FF>Preferences</font></a></strong></td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid">
+     Здесь Вы можете изменить параметры интерфейса программы :<br><br>
+
+     <ul>
+       <li><b> Colors palette </b> - палитра цветов (стандартная windows'ская, зеленое на черном, желтое на синем, голубое на синем)<br><br>
+       <li><b> Fonts</b>- шрифт текста в окнах с информацией и фонт для telnet клиента<br><br>
+       <li><b> Help language</b> - язык помощи (help language) (Русский, Английский, Испанский)<br><br>
+
+       <li><b>Tab position</b><br>
+       можно выбрать где будут размещатся закладки страниц : сверху (Top) или внизу (Bottom) окна.<br><br>
+
+       <li><b>Auto save options of main window pages</b><br>
+       Если включена эта опция то при нажатии кнопки [Start] утилита запоминает
+       свои параметры, например имя хоста. IP-Monitor запоминает размеры своих подокон.
+       И при следующем запуске программа восстанавливает запомненные значения.<br><br>
+
+       <li><b>Auto save current page</b><br>
+       Если включить эту опцию то программа будет запоминать (и при следующем запуске выбирать) активную утилиту.<br><br>
+
+       <li><b>Kept in lists recent addresses</b><br>
+       если включить эту опцию то программа будет запоминать введенные вами адреса в списках.<br><br>
+
+       <li><b>Clear old info</b><br>
+       если включить эту опцию то при нажатии на кнопку Start старое содержимое 
+       окна будет удалятся<br><br>
+
+       <li><b>Minimize to tray</b> отвечает за минимизацию IP-Tools в tray.<br><br>
+
+       <li><b>Always top</b><br>
+       если включить то IP-Tools будет всегда поверх других окон, даже если активна другая программа.<br>
+      </ul>
+  </td></tr>
+
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid" bgcolor="#000000" background="../images/ksbg3.jpg"><strong>
+     <a name="Interface"><font color=#00E0FF>Interface</font></a></strong></td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid">
+     Interface options:
+     <ul>
+       <li><b>Toolbar position</b><br>
+        Показать панель инструментов (toolbar) сверху/снизу или совсем ее не показывать.<br><br>
+
+       <li><b>Tabs position</b><br>
+        Тоже самое для закладок страниц (утилит).<br><br>
+
+       <li><b>Allow page multiline</b><br>
+       Если включить эту опцию то закладки страниц (утилит) программы при  необходимости
+       будут  размещатся  в  несколько  строчек.  А  если не включить то 
+       закладки будут в одну строчку но с кнопочками для скролинга.<br><br>
+
+       <li><b>Status bar</b><br>
+        Показать/спрятать строку состояния (status bar).<br><br>
+
+       <li><b>Show ScanList dialog when user marks "Use list" option</b><br>
+        Некоторые утилиты (NetBIOS, Lookup, все сканеры) могут работать со списками адресов.
+        Если Вы включите эту опцию, IP-Tools будет показывать диалог с этим списком адресов каждый раз когда
+        Вы будете включать опцию "Use list".
+     </ul>
+  </td></tr>
+
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid" bgcolor="#000000" background="../images/ksbg3.jpg"><strong>
+     <a name="HTMLColors"><font color=#00E0FF>HTML Colors</font></a></strong></td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid">
+     Настройка цветов для HTML отчетов и лог файлов.<br>
+     &nbsp;</td>
+  </tr>
+
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid" bgcolor="#000000" background="../images/ksbg3.jpg"><strong>
+     <a name="Sound"><font color=#00E0FF>Sound</font></a></strong></td>
+  </tr>
+  <tr>
+    <td width="100%">
+    А на этой странице задаются звуковые эффекты для разных событий 
+    (завершение работы утилитами, изменение статуса контролируемого хоста, ...)<br>
+    &nbsp;</td>
+  </tr>
+
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid; border-top: 1px solid" bgcolor="#000000" background="../images/ksbg3.jpg"><strong>
+     <a name="Connections"><font color=#00E0FF>Connections</font></a></strong></td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid">
+    Параметры утилиты "Connections"
+    <ul>
+    <li><p align="justify"> <b>Auto refresh</b><br>
+        Если эта опция включена то через заданное Вами время программа обновляет информацию о соединениях.<br><br>
+    <li><p align="justify"> <b>Save to log file</b><br>
+        Эта опция отвечает за запись истории всех соединений (или открытия портов) в указанный Вами лог файл.<br><br>
+    <li><b>Display host names</b><br>
+        Показывать имя хоста вместо IP адреса<br><br>
+    <li><p align="justify"> <b>Display port names</b><br>
+        Если включить эту опцию то IP-Tools вместо номера порта будет показывать его имя
+        (имя берется из списка портов - файл servises.lst)<br><br>
+    <li><p align="justify"> <b>Filter</b><br>
+        Здесь можно указать какие типы портов и состояния показывать в списке.
+        TCP или UDP, порты с уже установленными соединениями или порты которые
+        ждут соединения, и т.д.<br><br>
+    <li><p align="justify"> <b>Address filter</b><br>
+        А это фильтр по адресам, имеет три варианта : "Not filtered" - отключен, 
+        "Include filter" - показыать все соединения которые входят в заданный список адресов,
+        "Exclude filter" - показывать все соединения кроме тех которые входят в заданный список.
+        В списке адресов можно задавать как по одному адресу в строке, так и диапазон адресов, например "194.16.15.1 - 194.16.15.48".<br><br>
+    <li><p align="justify"> <b>Apply for</b><br>
+        А здесь можно указать для каких адресов применять фильтр : для IP адресов удаленных машин (Remote IP), для адресов вашей машины (Local IP) или для того и другого (Both).
+    </ul>
+    </td>
+  </tr>
+
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid" bgcolor="#000000" background="../images/ksbg3.jpg"><strong>
+     <a name="NBScanner"><font color=#00E0FF>NB Scanner</font></a></strong></td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid">
+    Options for NB Scanner :
+    <ul>
+    <li><p align="justify"> <b>Ping before scan resources</b><br>
+         если включить эту опцию то перед сканированием выделенных ресурсов программа пропингует
+         машину по IP адресу и если не дождется ответа то перейдет к следующему адресу.<br>
+         Параметры пингования см. на странице Ping/Trace<br>
+    <li><b>Skip address if no answer</b><br> 
+         Не сканировать адреса которые не ответили на ping<br><br>
+
+    <li><p align="justify"> <b>Get host name before scan</b><br>
+         а если включить эту опцию то прежде чем сканировать ресурсы программа попытается
+         узнать имя машины по IP адресу. Если это не удастся и опция "Skip address if cannot resolve"
+         включена то ресурсы сканироватся не будут, программа перейдет к 
+         следующему адресу из списка.
+    <li><b>Skip address if cannot resolve</b><br>
+         Enable this option to skip addresses which cannot be resolved to host names<br><br>
+
+    <li><b>Detect OS</b><br>
+        При включенной опции IP-Tools будет пытаться определить тип операционной системы на удаленной машине.
+        Работает если Вы запускаете IP-Tools на Windows NT/2000, не работает на Windows 9x/ME<br><br>
+    <li><b>Scan resources</b><br>
+        Искать выделенные ресурсы на удаленной машине: диски, принтера<br><br>
+
+    <li><b>Sound when resource found</b><br>
+        Здесь определяется звуковой файл (wav, mid, etc) который IP-Tools будет проигрывать когда найдет какой либо ресурс
+    </ul>
+  </td></tr>
+
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid" bgcolor="#000000" background="../images/ksbg3.jpg"><strong>
+     <a name="PortScanner"><font color=#00E0FF>Port Scanner</font></a></strong></td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid">
+    Options for ports Scanner :
+    <ul>
+    <li><p align="justify"> <b>Get host name before scanning ports</b><br>
+         если включить эту опцию то прежде чем сканировать порты программа попытается
+         узнать имя машины по IP адресу, и если это не удастся то порты сканироватся не будут,
+         программа перейдет к следующему адресу из списка<br>
+    <li><b>Skip address if cannot resolve</b><br>
+         Enable this option to skip addresses which cannot be resolved to host names<br><br>
+
+    <li><p align="justify"> <b>Ping before scanning ports</b><br>
+         а если включить эту опцию то перед сканированием портов программа пропингует
+         машину по IP адресу и если не дождется ответа то перейдет к следующему адресу<br>
+         Параметры пингования см. на странице Ping/Trace<br>
+    <li><b>Skip address if no answer</b><br> 
+         Пропускать адреса которые не ответили на ping<br><br>
+
+    <li><p align="justify"> <b>Show port names</b><br>
+         Если включить эту опцию то при сканировании рядом с номером порта будет выводится его имя.<br><br>
+    <li><p align="justify"> <b>Show port descriptions</b><br>
+         Показывать описание портов.
+    </ul>
+
+    IP-Tools может посылать данные в порт(ы) которые открыты на удаленной машине и показывать ответ от удаленной машины.
+    <ul>
+    <li><p align="justify"> <b>Show remote service messages</b><br>
+         если поставить здесь галочку то программу не будет сразу после соединения
+         рвать connect, а подождет ответа от найденной машины. Ждать будет указанное в 
+         следующем поле время.<br>
+    <li><p align="justify"> <b>Time for wait message</b><br>
+         Вот тут и указывается сколько времени после коннекта ждать сообщения от сервера.<br>
+    <li><p align="justify"> <b>Send string to remote host</b><br>
+         В этом поле задается строка которую программа может послать серверу.<br>
+    </ul>
+    Кроме того Вы должны задать список портов для сканирования. Вы можете задать этот список как текстовую строку 
+    (например "21, 25, 43-80, 110-139"), или отметить порты в списке на странице "Ports".<br>&nbsp;
+  </td></tr>
+
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid" bgcolor="#000000" background="../images/ksbg3.jpg"><strong>
+     <a name="Ports"><font color=#00E0FF>Ports</font></a></strong></td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid"><p align="justify">
+     На этой странице Вы можете задать список портов для сканирования Ports Scanner'ом.<br>
+     Список можно задавать проставляя галочки возле нужных портов или включить
+     опцию "Use list" и написать список нужных портов, например так "21,25,80-110".<br>
+     <br>
+     What is a Port ?<br>
+     The TCP port number identifies a process or application inside the computer.<br>
+     &nbsp; Any application or process that uses TCP for its transport is assigned a
+     unique identification number called a TCP port. These ports are numbered 
+     beginning with zero. Port numbers for client applications are dynamically
+     assigned by the operating system when there is a request for service. Port
+     numbers for server applications are preassigned by the IANA 
+     (Internet Assigned Numbers Authority) and do not change.<br>    
+     &nbsp; A server application or process that uses TCP as a transport has at least
+     one preassigned port number. For example, the preassigned port numbers for
+     FTP server services are 20 (data) and 21 (control).<br>
+    &nbsp; </td>
+  </tr>
+
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid" bgcolor="#000000" background="../images/ksbg3.jpg"><strong>
+     <a name="PingTrace"><font color=#00E0FF>Ping/Trace</font></a></strong></td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid">
+     Тут задаются параметры для утилиты Trace и для всех утилит которые 
+     используют ping (кроме Hosts Monitor'a, так как в мониторе 
+     параметры теста определяются отдельно для каждого контролируемого хоста).<br><br>
+
+     <ul>
+     <li>"<b>Packets to send</b>"<br>
+     определяет количество посылаемых ECHO пакетов<br><br>
+
+     <li>"<b>Packet Size</b>"<br>
+     задает размер ECHO пакета<br><br>
+
+     <li>"<b>TimeOut</b>"<br>
+     определяет timeout интервал в милисекундах<br><br>
+
+     <li>"<b>Time to Live</b>"<br>
+     значение TTL для посылаемых пакетов<br><br>
+<!-- (Time To Live) A technique used in best-effort delivery systems to avoid endlessly looping
+     packets. For example, each IP datagram is assigned an integer time to live when it is
+     created. IP gateways decrement the time to live field when they process a datagram and
+     discard the datagram if the time to live counter reaches zero.<br><br> -->
+
+     <li>"<b>Number of Hops</b>"<br>
+     specifies maximum number of hops to search for target<br><br>
+<!-- A measure of distance between two points in an internet. A hop count of n
+     means that n gateways separate the source and destination.<br><br> -->
+
+     <li>"<b>Show Hosts Description</b>"<br>
+     Начиная с 0.09 версии программа может выдавать информацию о доменах, хостах, etc.
+     (страницы LookUp, Scanner, ScanPorts, Trace с включенной опцией Use DNS).
+     Если эта опция включена то рядом с каждым именем хоста будет информация типа :<br>
+     <font face="Courier New" size="2" color=#FFFFDD>
+     ... www.chat.ru &nbsp; &nbsp; &nbsp;&nbsp;  (Russia)<br>
+     ... www.gazprom.ru    &nbsp; &nbsp;         (Join-stock company GAZPROM, town Moscow, Russia)<br>
+     ... mainboss.xaxa.BD  &nbsp;                (Bangladesh)<br></font>
+     </ul>
+  </td></tr>
+
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid" bgcolor="#000000" background="../images/ksbg3.jpg"><strong>
+     <a name="WhoIs"><font color=#00E0FF>WhoIs</font></a></strong></td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid"><p align=justify>
+     IP-Tools содержит встроенный список WhoIs серверов для всех top level доменов.
+     Но Вы можете создать ваш собственный список, причем информация из Вашего списка имеет приоритет выше чем из внутреннего списка
+     (тоесть IP-Tools будет искать сервер во внутреннем списке только если не найдет в Вашем).<br><br>
+
+     Для каждого элемента списка определяется:
+      <li><b>Domain</b> - домен, например ".com", or ".ibm.com"
+      <li><b>Comment</b> - необязательное поле, просто комментарий типа "University of Victoria"
+      <li><b>WhoIs server</b> - адрес WhoIs сервера (IP адрес или доменное имя)
+      <li><b>Port</b> - номер порта (стандартный для WhoIs серверов - порт #43).
+      <li><b>Max domain depth</b> - ...
+      <li><b>Server can return info about IP addresses </b> - поставьте тут галочку если WhoIs сервер находит информацию не только по доменному имени но и по IP адресу
+     </ul><p align=justify>
+     You could be a part of the community process to build up the WhoIs Server list.
+     Send to us your custom list, your list will be merged with contributions from other users, and an updated list will be sent back to you.
+     Use "Update" button to proceed this operation.<br>
+     &nbsp;</td>
+  </tr>
+
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid" bgcolor="#000000" background="../images/ksbg3.jpg"><strong>
+     <a name="Lookup"><font color=#00E0FF>NS Lookup</font></a></strong></td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid"><p align=justify>
+    по умолчанию утилита Lookup использует Windows API и default DNS сервер но
+    в IP-Tools 2.0 или выше Вы можете переключить эту утилиту в режим
+    "Advanced Name Server Lookup". В этом случае Вы сможете изменить:
+    <ul>
+     <li> DNS сервер
+     <li> порт и протокол (TCP, UDP)
+     <li> таймаут и количество попыток получить ответ от сервера
+     <li> тип запроса: A, ANY, CNAME, HINFO, MX, NS, PTR, SOA, или TXT
+     <li> включить или отключить рекурсию
+     <li> режим вывода информации: Full, Medium, или Compact
+    </ul>
+    IP-Tools поддерживает следующие типы записей:
+    <ul>
+     <li><b> A     </b> - a host address
+     <li><b> NS    </b> - an authoritative name server
+     <li><b> MD    </b> - a mail destination
+     <li><b> MF    </b> - a mail forwarder
+     <li><b> CNAME </b> - the canonical name for an alias
+     <li><b> SOA   </b> - marks the start of a zone of authority
+     <li><b> MB    </b> - a mailbox domain name
+     <li><b> MG    </b> - a mail group member
+     <li><b> MR    </b> - a mail rename domain name
+<!-- <li><b> NULL  </b> - a null RR (EXPERIMENTAL) -->
+     <li><b> WKS   </b> - a well known service description
+     <li><b> PTR   </b> - a domain name pointer
+     <li><b> HINFO </b> - host information
+     <li><b> MINFO </b> - mailbox or mail list information
+     <li><b> MX    </b> - mail exchange
+     <li><b> TXT   </b> - text strings
+    </ul>
+  </td></tr>
+
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid" bgcolor="#000000" background="../images/ksbg3.jpg"><strong>
+     <a name="IPMonitor"><font color=#00E0FF>IP-Monitor</font></a></strong></td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid">
+     Настройки IP-Monitor'а : интервал обновления информации, цвета фона и графиков,
+     количество линий в масштабных сетках и т.д.<br>
+     &nbsp;</td>
+  </tr>
+
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid" bgcolor="#000000" background="../images/ksbg3.jpg"><strong>
+     <a name="HostMon"><font color=#00E0FF>Host Monitor</font></a></strong></td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid">
+     Options for HostMonitor utility:<br><br>
+     <b>Style :</b>
+      <li> Report - показывать маленькую иконку и детальную информацию о каждом хосте.
+      <li> List - показывать маленькую иконку и имя хоста
+      <li> Icon - показывать большые икоки и имя хоста
+      <li> Small Icon - показывать маленькую иконку и имя хоста (похоже на List, но по другому группируются элементы)
+     </ul>
+
+     <b>Show grid lines</b><br>
+     При включенной опции IP-Tools будет рисовать сетку разделяющую элементы.<br><br>
+
+     <b>Start/Stop mode :</b>
+      <li> start upon loading - после загрузки IP-Tools запустит монитор
+      <li> stop upon loading - не запускать монитор после загрузки 
+      <li> restore last status - восстановить статус который был в момент завершения работы
+     </ul>
+
+    <b>Refresh after edit :</b>
+     <li> Always check status after editing host properties 
+     <li> Ask about check
+     <li> Does not refresh status after an edit 
+    </ul>
+  </td></tr>
+
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid" bgcolor="#000000" background="../images/ksbg3.jpg"><strong>
+     <a name="HostMonLog"><font color=#00E0FF>Host Monitor: Log settings</font></a></strong></td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid">
+     HostMonitor's options, log file settings:<br><br>
+    <b>Log file</b>
+     <li> Save to specific file
+     <li> Automatically change the name every month (MMYYYY-Log.ext)
+     <li> Automatically change the name every day (DDMMYYYY-Log.ext)
+     <li> Log is disabled
+    </ul>
+    <p align=justify>
+    Если Вы выбрали режим автоматической смены имени лог файла, то в имени файла Вы можете задавать специальные макросы.
+    IP-Tools воспринимает текст ограниченный символами процента '<b>%</b>' как макрос (переменную),
+    заменяя '<b>DD</b>' на номер дня (число), '<b>MM</b>' - номер месяца, '<b>YY</b>' - год (2 последние цифры года), '<b>YYYY</b>' - год (4 цифры).<br>
+    Примеры : <br>
+     &nbsp;&nbsp; <u>c:\ip-tools\log\<b>%ddmmyy%</b>.dbf</u> - IP-Tools будет вести лог в каталоге "c:\ip-tools\log\" и менять имя лог файла каждый день.<br>
+     &nbsp;&nbsp; <u><b>%yyyy%</b>.htm</u> - вести лог в текущем каталоге (кстати не стоит так делать, так как текущий каталог постоянно меняется) и менять имя лог файла каждый год.<br><br>
+
+    <b>Save mode</b>
+     <li> Save all information
+     <li> Save only if a host changes status</li>
+    </ul>
+    <p align=justify>
+     Если Вы выберете опцию "Save all information" то IP-Tools будет записывать в лог результаты всех тестов, независимо от того, изменился статус хоста или нет.
+     Этот режим полезен если Вам нужна детальная информация о времени доступа к хосту.
+     Но с другой стороны в этом случае лог файл будет быстро расти в размерах.<br>
+     При выбранной опции "Save only if a host changes status" IP-Tools будет записывать только изменения в статусе (когда хост "умер" или "ожил").<br><br>
+
+    <b>Log file format</b>
+     <li> Text file
+     <li> HTML file
+    </ul>
+    <p align=justify>
+    Note:<br>
+    Лог в формате HTML использует больше дискового пространства (около 800 байт на каждую запись) чем текстовый файл (около 80 байт на запись).
+    Но HTML лог конечно более наглядный и если IP-Tools будет записывать лог в каталог Вашего Web сервера, то лог можно легко просмотреть откуда угодно.<br>
+     &nbsp;</td>
+  </tr>
+
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid" bgcolor="#000000" background="../images/ksbg3.jpg"><strong>
+     <a name="ScanList"><font color=#00E0FF>Scan List</font></a></strong></td>
+  </tr>
+  <tr>
+    <td width="100%"><p align="justify">
+     Здесь вы можете задать список адресов которые будут использовать сканеры
+     (Name Scanner, Port Scanner, NB Scanner, Ping Scanner, LookUp) при
+     включенной опции "From List". Кроме IP адресов вы можете задать диапазон 
+     адресов (через символ '-') а также имена хостов.<br>
+     <br>
+     Пример :<br>
+     <font face="Courier New" size="2" color=#FFFFDD>
+     ;-----------------------------------------------------------------<br>
+     199.66.10.12                 <br>
+     133.65.12.250 - 133.65.13.17 <br>
+     200.32.12.188 - 200.32.12.95 &nbsp;&nbsp; ; текст после ';' игнорируется<br>
+     200.32.12.122 - 200.32.12.25 <br>
+     199.66.10.12<br>
+     <br>
+     www.chat.ru &nbsp;&nbsp;&nbsp;  ; для отдельного компьютера Вы можете указать его имя<br>
+     www.garris.com -  www.yahoo.com ; - ошибочная строка !<br>
+     199.66.10.15<br>
+     ;-----------------------------------------------------------------</font><br>
+    &nbsp; </td>
+  </tr>
+</table>
+</justify></div>
+<hr>
+
+</body>
+</html>

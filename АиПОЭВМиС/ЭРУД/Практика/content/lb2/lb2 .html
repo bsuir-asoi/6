@@ -1,0 +1,952 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>lb2 </title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+body {
+  margin: 5px 5px 5px 5px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Normal text */
+{
+ font-size: 10pt;
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1 /* Heading */
+{
+ font-weight: bold;
+ color: #0000ff;
+}
+span.rvts2 /* Subheading */
+{
+ font-weight: bold;
+ color: #000080;
+}
+span.rvts3 /* Keywords */
+{
+ font-style: italic;
+ color: #800000;
+}
+a.rvts4, span.rvts4 /* Jump 1 */
+{
+ color: #008000;
+ text-decoration: underline;
+}
+a.rvts5, span.rvts5 /* Jump 2 */
+{
+ color: #008000;
+ text-decoration: underline;
+}
+span.rvts6
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts7
+{
+ font-size: 14pt;
+}
+span.rvts8
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+span.rvts9
+{
+ font-size: 14pt;
+ color: #000000;
+}
+span.rvts10
+{
+ font-size: 14pt;
+ color: #003300;
+}
+span.rvts11
+{
+ font-size: 14pt;
+ color: #ff0000;
+}
+span.rvts12
+{
+ font-size: 14pt;
+ color: #0000ff;
+}
+span.rvts13
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts14
+{
+ font-size: 14pt;
+ font-style: italic;
+}
+span.rvts15
+{
+ font-size: 14pt;
+ font-weight: bold;
+ color: #0000ff;
+}
+span.rvts16
+{
+ font-size: 14pt;
+ font-weight: bold;
+}
+span.rvts17
+{
+ font-size: 14pt;
+}
+span.rvts18
+{
+ font-size: 14pt;
+ font-family: 'Verdana', 'Geneva', sans-serif;
+}
+span.rvts19
+{
+ font-size: 14pt;
+ font-style: italic;
+ color: #0000ff;
+}
+span.rvts20
+{
+ font-size: 14pt;
+ font-style: italic;
+ font-weight: bold;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1 /* Centered */
+{
+ text-align: center;
+}
+.rvps2
+{
+ text-align: justify;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 4px 24px 4px;
+}
+.rvps3
+{
+ text-align: justify;
+ text-indent: 36px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 4px 0px 0px;
+}
+.rvps4
+{
+ text-align: justify;
+ text-indent: 44px;
+ padding: 0px 0px 0px 0px;
+ margin: 16px 4px 8px 145px;
+}
+.rvps5
+{
+ text-align: justify;
+ text-indent: 36px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 4px 0px 0px;
+}
+.rvps6
+{
+ text-align: justify;
+ text-indent: 47px;
+ padding: 0px 0px 0px 0px;
+ margin: 16px 4px 8px 142px;
+}
+.rvps7
+{
+ text-align: justify;
+ text-indent: 12px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 4px 8px 36px;
+}
+.rvps8
+{
+ text-align: justify;
+ text-indent: 48px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 4px 8px 0px;
+}
+.rvps9
+{
+ text-align: justify;
+ text-indent: 36px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 4px 0px 0px;
+}
+.rvps10
+{
+ text-align: justify;
+ text-indent: 36px;
+ padding: 0px 0px 0px 0px;
+ margin: 8px 4px 0px 0px;
+}
+.rvps11
+{
+ text-align: justify;
+ text-indent: 36px;
+ padding: 0px 0px 0px 0px;
+ margin: 8px 4px 0px 0px;
+}
+.rvps12
+{
+ text-align: justify;
+ text-indent: 36px;
+ padding: 0px 0px 0px 0px;
+ margin: 8px 4px 0px 0px;
+}
+.rvps13
+{
+ text-indent: 36px;
+ margin: 0px 0px 8px 0px;
+}
+.rvps14
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps15
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps16
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps17
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps18
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 8px 0px 0px 0px;
+}
+.rvps19
+{
+ text-align: justify;
+ margin: 7px 0px 0px 0px;
+}
+.rvps20
+{
+ text-indent: 38px;
+ margin: 7px 0px 24px 0px;
+}
+.rvps21
+{
+ text-align: justify;
+ margin: 7px 0px 16px 0px;
+}
+.rvps22
+{
+ text-indent: 38px;
+ margin: 7px 0px 0px 0px;
+}
+.rvps23
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 7px 0px 7px 0px;
+}
+.rvps24
+{
+ text-align: justify;
+ margin: 7px 0px 0px 0px;
+}
+.rvps25
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 24px 0px 0px 0px;
+}
+.rvps26
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 8px 0px 0px 0px;
+}
+.rvps27
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 8px 0px 0px 0px;
+}
+.rvps28
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 8px 0px 16px 0px;
+}
+.rvps29
+{
+ text-align: justify;
+ text-indent: -12px;
+ margin: 8px 0px 0px 0px;
+}
+.rvps30
+{
+ text-align: justify;
+ text-indent: 47px;
+ line-height: 1.40;
+ margin: 24px 0px 0px 0px;
+}
+.rvps31
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 8px 0px 0px 0px;
+}
+.rvps32
+{
+ text-align: justify;
+ text-indent: 47px;
+ line-height: 1.40;
+ margin: 8px 0px 0px 0px;
+}
+.rvps33
+{
+ text-align: justify;
+ line-height: 1.40;
+ margin: 24px 0px 0px 0px;
+}
+.rvps34
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 24px 0px 0px 0px;
+}
+.rvps35
+{
+ text-indent: 48px;
+ margin: 24px 0px 8px 0px;
+}
+.rvps36
+{
+ text-align: justify;
+ text-indent: 47px;
+}
+.rvps37
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 16px 0px 0px 0px;
+}
+.rvps38
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 16px 0px 0px 0px;
+}
+.rvps39
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 8px 0px 0px 0px;
+}
+.rvps40
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 16px 0px 0px 0px;
+}
+.rvps41
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 8px 0px 0px 0px;
+}
+.rvps42
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 8px 0px 0px 0px;
+}
+.rvps43
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 8px 0px 0px 0px;
+}
+.rvps44
+{
+ text-align: justify;
+ text-indent: 48px;
+ margin: 8px 0px 0px 0px;
+}
+.rvps45
+{
+ text-align: justify;
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: 1px;
+ padding: 5px 0px 5px 0px;
+ margin: 2px 0px 0px 0px;
+}
+.rvps46
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 8px 0px 8px 0px;
+}
+.rvps47
+{
+ text-align: justify;
+ text-indent: 47px;
+ line-height: 1.40;
+}
+.rvps48
+{
+ text-align: justify;
+ text-indent: 47px;
+ line-height: 1.40;
+}
+.rvps49
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 8px 0px 0px 0px;
+}
+.rvps50
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 8px 0px 0px 0px;
+}
+.rvps51
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 16px 0px 0px 0px;
+}
+.rvps52
+{
+ text-align: justify;
+ text-indent: 47px;
+}
+.rvps53
+{
+ text-align: justify;
+ text-indent: 47px;
+}
+.rvps54
+{
+ margin: 16px 0px 8px 0px;
+}
+.rvps55
+{
+ text-align: justify;
+}
+.rvps56
+{
+ text-align: justify;
+}
+.rvps57
+{
+ text-align: justify;
+ text-indent: 38px;
+}
+.rvps58
+{
+ text-align: justify;
+ text-indent: 48px;
+}
+.rvps59
+{
+ text-align: justify;
+}
+.rvps60
+{
+ text-align: justify;
+ text-indent: 9px;
+ margin: 16px 0px 8px 132px;
+}
+.rvps61
+{
+}
+.rvps62
+{
+ text-align: justify;
+ text-indent: 47px;
+}
+.rvps63
+{
+ text-indent: 47px;
+}
+.rvps64
+{
+ text-indent: 47px;
+ margin: 24px 0px 8px 95px;
+}
+.rvps65
+{
+ text-align: justify;
+ text-indent: 47px;
+}
+.rvps66
+{
+ text-align: justify;
+ text-indent: 47px;
+}
+.rvps67
+{
+ text-align: justify;
+ text-indent: 47px;
+}
+.rvps68
+{
+ text-align: justify;
+ text-indent: 47px;
+}
+.rvps69
+{
+ text-align: justify;
+ text-indent: 48px;
+}
+.rvps70
+{
+ text-align: left;
+ text-indent: 47px;
+ padding: 0px 0px 0px 0px;
+ margin: 24px 0px 0px 142px;
+}
+.rvps71
+{
+ text-align: justify;
+ text-indent: 48px;
+ margin: 8px 0px 0px 0px;
+}
+.rvps72
+{
+ text-align: justify;
+ margin: 8px 0px 0px 0px;
+}
+.rvps73
+{
+ text-align: justify;
+ margin: 8px 0px 0px 0px;
+}
+.style3 {
+	border-width: 0px;
+}
+--></style>
+</head>
+<body>
+<h1   class=rvps2>&nbsp;<a href="../../practice.htm"><img src="../lb1/Menu.gif" width="73" height="22" class="style3"></a>&nbsp;</h1>
+<h1   class=rvps2><span  class=rvts0><span  class=rvts6>  &nbsp;  &nbsp;  &nbsp;
+&nbsp;</span></span><span  class=rvts0><span  class=rvts6>  &nbsp; &nbsp; &nbsp;
+&nbsp;</span></span><span  class=rvts0><span  class=rvts6>  &nbsp; &nbsp; &nbsp;
+&nbsp;</span></span><span  class=rvts0><span  class=rvts6>  &nbsp; &nbsp; &nbsp;
+&nbsp;</span></span><span class=rvts0><span
+class=rvts7>Лабораторная&nbsp;            работа           №
+2</span></span></h1> 
+<h1       class=rvps3><span      class=rvts0><span      class=rvts8>&nbsp;&nbsp;
+Технология администрирования
+корпоративных   сетей  на&nbsp;  основе&nbsp;  Windows
+PowerShell</span></span><span           class=rvts0><span           class=rvts6>
+</span></span></h1> 
+<h1      class=rvps4><span     class=rvts0><span     class=rvts8>1.     Цель
+работы</span></span></h1> 
+<h1    class=rvps5><span    class=rvts0><span    class=rvts7>   Освоение
+технологии администрирования</span></span><span
+class=rvts0><span     class=rvts9>     </span></span><span     class=rvts0><span
+class=rvts7>корпоративных сетей</span></span><span
+class=rvts0><span       class=rvts9>&nbsp;&nbsp;&nbsp;       </span></span><span
+class=rvts0><span     class=rvts7>Microsoft     Windows     средствами
+PowerShell.</span></span><span class=rvts0><span
+class=rvts6>&nbsp;</span></span><span       class=rvts0><span       class=rvts7>
+</span></span></h1> 
+<h1     class=rvps6><span     class=rvts0><span     class=rvts8>2.    Общие
+сведения</span></span></h1> 
+<h1     class=rvps7><span    class=rvts0><span    class=rvts8>2.1.    Общая
+характеристика Windows PowerShell</span></span></h1> 
+<h1    class=rvps8><span    class=rvts0><span   class=rvts7>Недостатки
+традиционных        средств        автоматизации
+управления  и  администрирования  Microsoft  Windows
+(cmd.exc,   WMIC,   WSH;  см  лабораторную  работу  № 1),
+усугубляемые          усложнением          сетевых
+корпоративных      технологий,      привели     к
+созданию    Windows    PowerShell    (PS).   Windows&nbsp;   PS   как
+технология   достаточно   проста  и  вместе  с
+этим&nbsp;  предоставляет широкие возможности
+системным    инженерам    и    администраторам
+</span></span><span               class=rvts0><span              class=rvts10>в
+деле</span></span><span            class=rvts0><span            class=rvts7>
+автоматизации   управления   корпоративными
+сетями.  Windows PS как технология предоставляет
+практически   неорганичные   возможности  по
+настройке   серверов,   виртуальных   машин  и
+сбору              информации              об              их
+состоянии</span></span></h1> 
+<h1     class=rvps9><span     class=rvts0><span     class=rvts7>    Истоки
+создания&nbsp;  PS (первоначальное название Monad)
+связаны   с   доработкой  WMIC  для  обеспечения
+доступа    из    командной    строки    к    любым
+классам    платформы    .NET    Framework.    Windows&nbsp;   PS
+является   и   оболочкой  командной  строки  и
+средой         выполнения        сценариев.&nbsp;&nbsp;
+Сценарии    пишутся    на   новом   языке.   Язык
+сценариев      PS     поддерживает     управление
+объектами   .NET,   обладает   совместимостью  с
+языками,                 используемыми                при
+программировании       для       .NET      и      имеет
+синтаксическое   сходство   с   C#   (язык   PS  по
+существу  представляет  собой упрощённый C#);
+это   обусловлено   тем,   что&nbsp;   оболочка   PS
+основана на .NET Framework. </span></span></h1> 
+<h1    class=rvps10><span    class=rvts0><span    class=rvts7>Windows&nbsp;   PS
+принципиально&nbsp;    отличается    от    других
+оболочек  тем, что PS обрабатывает не текст, а
+объекты        платформы        .NET.&nbsp;        Windows&nbsp;
+PowerShell</span></span><span           class=rvts0><span          class=rvts11>
+</span></span><span        class=rvts0><span        class=rvts7>содержит
+встроенные     команды     (командлеты;     cmdlets),
+которые  имеют  унифицированный интерфейс и
+обрабатываются       одним       синтаксическим
+анализатором.       Командлет      представляет
+собой         команду,        выполняющую        одну
+единственную функцию.&nbsp; </span></span></h1> 
+<h1  class=rvps11><span  class=rvts0><span class=rvts7>Версия 1.0 Windows
+PowerShell  была выпущена в 2006 г. Она доступна для
+Windows  XP  SP2/SP3, Windows Server 2003, Windows Vista, и встроена в
+Windows  Server  2008.  Версия 2.0  Windows  PowerShell  является
+компонентом    Windows   7   и   Windows   Server   2008   R2.&nbsp;
+Версия 2.0  PS  доступна&nbsp;  для  Windows  XP  SP3, Windows
+Server 2003 SP2, Windows Vista SP1 и Windows Server 2008.</span></span></h1>
+<p  class=rvps11>&nbsp;</p> 
+<p          class=rvps13><span          class=rvts12>&nbsp;         </span><span
+class=rvts7>2.2.</span><span           class=rvts12>&nbsp;          </span><span
+class=rvts8>Командная  оболочка</span><span class=rvts13>&nbsp;
+</span><span class=rvts8>PowerShell</span><span class=rvts7> </span></p> 
+<p     class=rvps14><span     class=rvts7>Для    запуска    PowerShell
+v. 1.0&nbsp;</span><span class=rvts14>(v. 2.0)</span><span        class=rvts7>        необходимо</span><span
+class=rvts12>&nbsp;      </span><span      class=rvts7>ввести:</span><span
+class=rvts12>&nbsp;      </span><span     class=rvts8>Пуск     (</span><span
+class=rvts7>Start)          </span><span         class=rvts8>&gt;         Все
+программы</span><span   class=rvts15>   </span><span   class=rvts8>&gt;
+Windows  PowerShell  1.0  &gt;  Windows  PowerShell. </span><span class=rvts7>В
+результате     на     экране     появится     окно
+командной   оболочки   Windows  PowerShell  (см.  рис.  1)
+похожее        на       оболочку       классической
+командной строки cmd.exe. </span></p> 
+<p  class=rvps15><span  class=rvts7>Другие варианты запуска
+PowerShell:</span></p> 
+<p      class=rvps16><span      class=rvts7>Пуск      &gt;      </span><span
+class=rvts8>Выполнить</span><span       class=rvts7>,      вводим
+</span><span  class=rvts8>powershell  и&nbsp; </span><span class=rvts7>жмем
+кнопку</span><span class=rvts8> ОК. </span></p> 
+<p    class=rvps17><span    class=rvts7>В   окне</span><span   class=rvts8>
+</span><span  class=rvts7>командной строки&nbsp; набираем
+</span><span              class=rvts8>powershell,&nbsp;             </span><span
+class=rvts7>жмем&nbsp; </span><span class=rvts8>Ввод.</span></p> 
+<p  class=rvps18><span class=rvts7>Для сравнения оболочек PS
+и   CMD   запустите   обычную  командную  строку
+(</span><span   class=rvts8>Пуск   &gt;  Выполнить  &gt;  cmd  &gt;
+OK,&nbsp;  </span><span  class=rvts7>см.  рис  2</span><span class=rvts8>).
+</span><span   class=rvts7>На   первый  взгляд  командные
+оболочки   различаются  только  цветом  (цвет
+фона   окна   у   PowerShell  по  умолчанию  -  синий).
+</span></p> 
+<p    class=rvps19><img    width=619   height=274   alt=""   hspace=1   vspace=1
+src="img1.png"></p> 
+<p  class=rvps20><span  class=rvts7>Рис. 1. Окно оболочки Windows
+PowerShell.</span></p> 
+<p    class=rvps21><img    width=618   height=276   alt=""   hspace=1   vspace=1
+src="img2.png"></p> 
+<p   class=rvps22><span   class=rvts7>Рис.   2.   Окно   оболочки
+классической командной строки&nbsp; CMD.</span></p> 
+<p   class=rvps23><span   class=rvts7>Но   приятные   различия
+начинаются     уже     на    уровне    реализации
+операций  копирования/вставки. В дополнение
+к     традиционному     копированию     в     окно
+классической  CMD  в PowerShell можно осуществлять
+копирование   и   вставку   любой   выделенной
+("подсвеченной"       левой       кнопкой      мыши)
+текстовой      части      самого     окна     PowerShell
+(необходимо  выполнить  двойной  клик правой
+кнопкой   мыши   на   подсвеченном  блоке;  это
+приведет   к   вставке&nbsp;   данного   блока  на
+позицию  мигающего  курсора в окне PS). Другой
+приятной          особенностью,         отличающей
+командную    оболочку    PS    от    классической
+оболочки        CMD,       является       возможность
+использовать   оболочку  PS  как  калькулятор,
+см. рис. 3.</span></p> 
+<p    class=rvps24><img    width=619   height=209   alt=""   hspace=1   vspace=1
+src="img3.png"></p> 
+<p    class=rvps25><span    class=rvts7>Рис. 3. Окно   оболочки
+Windows         PS         отображающее         результаты
+элементарных вычислений.</span></p> 
+<p    class=rvps26><span    class=rvts7>Главное   же   отличием
+PowerShell   от   предыдущих   командных   оболочек
+Windows  состоит  в  том,  что Windows PowerShell является
+объектно-ориентированной командной
+оболочкой,      работающей     на     основе     .NET
+Framework.</span></p> 
+<p  class=rvps27><span class=rvts7>Windows PowerShell предоставляет
+значительно         больше         команд,         чем
+классическая  командная  строка.  PowerShell  v. 1.0
+содержит  более 100 командлетов; (в&nbsp; v. 2.0&nbsp;
+их    более   200).   Команды   PowerShell   состоят   из
+глагола   и   существительного,   разделенных
+тире.    Например:    Get-Help   (вызов   справки   по
+синтаксису  PowerShell).  В  PowerShell  включены  также
+псевдонимы   многих   известных  команд;  так,
+например,  команды  help  (стиль Windows) и man (стиль
+Unix)         работают        аналогично        команде
+Get-Help.</span></p> 
+<p    class=rvps28><span    class=rvts7>Для    ознакомления    с
+командами    Windows    PowerShell    введите    команду:
+</span><span   class=rvts8>Get-Help_*</span><span   class=rvts7>.&nbsp;   Для
+получения   подробной  справки  (с  примерами
+применения команды)&nbsp;&nbsp;
+необходимо&nbsp;&nbsp;            ввести:           </span><span
+class=rvts8>Get-Help               </span><span              class=rvts14>имя
+команды</span><span               class=rvts8>               </span><span
+class=rvts16>–</span><span          class=rvts8>Detailed.         </span><span
+class=rvts7>Например,   для  получения  сведений  о
+команде</span><span   class=rvts8>   </span><span  class=rvts7>help&nbsp;
+следует   ввести:  </span><span  class=rvts8>Get-Help  </span><span
+class=rvts14>Get-Help</span><span            class=rvts8>           </span><span
+class=rvts16>–</span><span          class=rvts8>Detailed          </span><span
+class=rvts7>(см.      рис.     4).&nbsp;</span><span     class=rvts8>&nbsp;
+</span></p> 
+<p    class=rvps29><img    width=634   height=371   alt=""   hspace=1   vspace=1
+src="img4.png"></p> 
+<p   class=rvps30><span  class=rvts7>Рис.  4.  Фрагмент  вывода
+команды     Get-Help    </span><span    class=rvts14>Get-Help</span><span
+class=rvts7>              </span><span              class=rvts17>–</span><span
+class=rvts7>Detailed.</span><span class=rvts8>&nbsp;</span><span
+class=rvts7>&nbsp;&nbsp;&nbsp; </span></p> 
+<p  class=rvps31><span class=rvts7>На рис.5 показан фрагмент
+вывода   в   окно   оболочки   PS   команды   Get-Help
+</span><span    class=rvts14>Get-Help</span><span    class=rvts7>   </span><span
+class=rvts17>–</span><span      class=rvts7>Detailed,     содержащий
+примеры        ввода        команд       Get-Help,</span><span
+class=rvts18>&nbsp;     </span><span    class=rvts7>Get-Help_*    и    Get-Help
+Get-alias.</span><span class=rvts8> </span></p> 
+<p    class=rvps33><img    width=620   height=327   alt=""   hspace=1   vspace=1
+src="img5.png"></p> 
+<p   class=rvps34><span  class=rvts7>Рис.  5.  Фрагмент  вывода
+команды   Get-Help   Get-Help  </span><span  class=rvts17>–</span><span
+class=rvts7>Detailed,      содержащий      примеры.</span><span
+class=rvts8>&nbsp;</span><span class=rvts7>&nbsp;&nbsp;&nbsp; </span></p> 
+<p  class=rvps35><span  class=rvts8>2.3.  Команды  PowerShell</span><span
+class=rvts7> </span></p> 
+<p   class=rvps36><span  class=rvts7>Оболочка</span><span  class=rvts12>
+</span><span    class=rvts7>PS    поддерживает    следующие
+типы       команд:       </span><span       class=rvts8>внешние
+исполняемые    файлы</span><span    class=rvts7>,   </span><span
+class=rvts8>командлеты</span><span      class=rvts7>,     </span><span
+class=rvts8>функции</span><span     class=rvts7>,     и     </span><span
+class=rvts8>сценарии</span><span class=rvts7>.</span></p> 
+<p    class=rvps37><span    class=rvts8>Внешние    исполняемые
+файлы</span><span  class=rvts7>  </span><span  class=rvts17>—</span><span
+class=rvts7>         это        обычные,        выполняемые
+операционной    системой    файлы.    Например,
+внешние  команды  интерпретатора  cmd.exe  (cd, dir,
+copy     и    др.).    Для    ознакомления    с    этими
+командами   введите   в   окне   CMD  команду  help.
+Начинать      практическое     освоение     PS&nbsp;
+следует именно с этих команд.</span></p> 
+<p  class=rvps38><span  class=rvts8>Командлет</span><span  class=rvts7>
+(см      пп.     2.1,     2.2)     используется     внутри
+PowerShell</span><span       class=rvts18>.</span><span       class=rvts7>&nbsp;
+Командлеты        является        классами       .NET,
+порожденными  базовым  классом  CMDLET, который
+гарантирует                их                совместимый
+синтаксис.</span><span            class=rvts12>            </span><span
+class=rvts7>Командлеты&nbsp;       компилируются       в
+динамическую  библиотеку  DLL  и подгружаются
+к  процессу  PS  во  время  запуска  оболочки PS.
+Каждый   из  командлетов  (очень  простой  или
+сложный)        выполняет        узкую        задачу.
+Посредством      вертикальной      черты     ( | )
+командлеты    могут    быть    организованы    в
+конвейер,   в  котором  объекты  предаются  от
+одного командлета к другому.</span></p> 
+<p  class=rvps39><span  class=rvts7>Для изучения технологии
+работы        с       командлетами&nbsp;       следует
+обратиться  к  справочным  материалам  PowerShell
+(</span><span    class=rvts14>Пуск</span><span    class=rvts7>&nbsp;    &gt;
+</span><span  class=rvts14>Все  программы</span><span  class=rvts12>
+</span><span   class=rvts7>&gt;   </span><span  class=rvts14>Windows  PowerShell
+1.0</span><span             class=rvts7>            &gt;            </span><span
+class=rvts14>Знакомство      с     Windows     PowerShell</span><span
+class=rvts7>;&nbsp;&nbsp;  </span><span  class=rvts14>Пуск&nbsp; &gt; Все
+программы</span><span   class=rvts19>   </span><span  class=rvts14>&gt;
+Windows       PowerShell       1.0       &gt;&nbsp;       Руководство
+пользователя</span><span   class=rvts7>)</span><span  class=rvts20>.
+</span></p> 
+<p      class=rvps40><span     class=rvts8>Функция&nbsp;     </span><span
+class=rvts7>в  PowerShell представляет собой блок кода
+на  языке  PS, имеющий название и хранящийся в
+памяти    до    завершения    текущего    сеанса
+командной строки.</span></p> 
+<p      class=rvps41><span     class=rvts7>Пример     простейшей
+функции:</span></p> 
+<p   class=rvps42><span   class=rvts14>PS   C:\Documents   and  Settings\leo&gt;
+function MyF1{"Изучаем&nbsp; PS"}.</span></p> 
+<p  class=rvps43><span  class=rvts7>Вызовем  функцию  </span><span
+class=rvts14>MyF1</span><span      class=rvts7>      из     командной
+строки:</span></p> 
+<p   class=rvps44><span   class=rvts14>PS   C:\Documents   and  Settings\leo&gt;
+MyF1</span></p> 
+<p class=rvps44><span class=rvts14>Изучаем PS</span></p>
+<p    class=rvps44><span   class=rvts7>Функции   поддерживают
+работу  с  параметрами.  Например,  определим
+функцию&nbsp;  </span><span class=rvts14>MyF1 </span><span class=rvts7>с
+одним параметром:</span></p> 
+<p  class=rvps45><span  class=rvts14>&nbsp; PS C:\Documents and Settings\leo&gt;
+function MyF1($q) {"Изучаем $q"}</span></p> 
+<p   class=rvps46><span   class=rvts7>Вызовем  эту  функцию  с
+параметром:</span></p> 
+<p  class=rvps47><span  class=rvts14>PS  C:\Documents  and Settings\leo&gt; MyF1
+PS</span></p> 
+<p class=rvps48><span class=rvts14>Изучаем PS</span></p>
+<p   class=rvps49><span   class=rvts7>Как  и  в  других  языках
+программирования  в  PS  при описании функции
+можно        задавать       список       формальных
+параметров,        значения        которых       при
+выполнении       функции       будут      заменены
+значениями&nbsp;       переданных      аргументов.
+Функции    в    PS    в    отличие    от   функций   в
+традиционных      языках      программирования
+являются   командой,   а   не  аналогом  метода
+объекта. </span></p> 
+<p   class=rvps50><span  class=rvts7>Для  изучения  вопросов,
+связанных    с    реализацией    функции    в   PS,
+следует     обратиться     к    названным    выше
+справочным    материалам   а   также   к   файлу
+"Краткий      обзор     языка     PowerShell"     (</span><span
+class=rvts14>Пуск</span><span       class=rvts7>      &gt;      </span><span
+class=rvts14>Все  программы</span><span  class=rvts12>  </span><span
+class=rvts7>&gt;  </span><span  class=rvts14>Windows  PowerShell 1.0</span><span
+class=rvts7>         &gt;         Краткий        обзор).</span><span
+class=rvts14>&nbsp;&nbsp; </span></p> 
+<p       class=rvps51><span      class=rvts8>Сценарии.      </span><span
+class=rvts7>Сценарий  представляет  собой  код  на
+языке   PS,   хранящийся   во   внешнем   файле  с
+расширением  </span><span  class=rvts14>ps1.</span><span class=rvts7>
+Важной     особенностью     в    плане    сетевой
+безопасности   является  то  обстоятельство,
+что   скрипт   с   расширением   ps1   невозможно
+запустить      на     исполнение     иначе     как,
+запустив   оболочку  PS;  так  что  для  запуска
+сценария          с         расширением         </span><span
+class=rvts14>ps1</span><span  class=rvts7> необходимо запустив
+оболочку    PS,   ввести   имя   файла   и   нажать
+клавишу Enter.</span></p> 
+<p     class=rvps52><span     class=rvts7>Сценарии    позволяют
+работать    с    PowerShell   в   пакетном   режиме   с
+заранее   созданными   командами   на   основе
+управляющих      инструкций      языка     PowerShell.
+Сценарии  в PowerShell в отличие от сценариев WSH и
+командных      файлов     cmd.exe     можно     писать
+непосредственно  в самой оболочке, перенося
+затем   готовый   отлаженный  код  во  внешний
+файл. </span></p> 
+<p  class=rvps53><span  class=rvts7>Для изучения технологии
+создания&nbsp;  и  использования  сценариев в PS
+следует     обратиться     к    названным    выше
+справочным материалам.</span></p> 
+<p  class=rvps54><span  class=rvts7>  &nbsp;  &nbsp;  &nbsp;  &nbsp;</span><span
+class=rvts7>    &nbsp;    &nbsp;    &nbsp;   &nbsp;</span><span   class=rvts8>3.
+Порядок выполнения работы</span></p> 
+<p  class=rvps55><span  class=rvts7>  &nbsp;  &nbsp;  &nbsp;  &nbsp;</span><span
+class=rvts7>3.1.   Изучите   материал,   изложенный  в
+пункте 2    данной    лабораторной   работы,   и
+получите       индивидуальное       задание      у
+преподавателя.</span></p> 
+<p  class=rvps56><span  class=rvts7>  &nbsp;  &nbsp;  &nbsp;  &nbsp;&nbsp;</span><span   class=rvts7>3.2.
+Включите   закрепленный  за  вами  компьютер,
+выполните           необходимую           процедуру
+регистрации     согласно     присвоенной    вам
+администратором   (преподавателем)   учетной
+записи и паролю.</span></p> 
+<p  class=rvps57><span  class=rvts7>  &nbsp;3.3.        Запустите        командную</span><span
+class=rvts12>   </span><span  class=rvts7>оболочку  Windows  PowerShell
+и&nbsp; реализуйте следующее: </span></p> 
+<p    class=rvps58><span   class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; запуск   в   оболочке   PS
+основных команд оболочки cmd.exe;</span></p> 
+<p        class=rvps58><span       class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ознакомьтесь       с
+возможностями          оболочки          PS          как
+калькулятора;</span></p> 
+<p        class=rvps58><span       class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ознакомьтесь       и
+поработайте    с    отдельными    командами    и
+псевдонимами</span><span class=rvts6>&nbsp;</span><span
+class=rvts7> команд PS;</span></p> 
+<p    class=rvps58><span    class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; получите   и   оформите
+подробное описание командлета Get-Help;</span></p> 
+<p    class=rvps58><span    class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; дайте   описание   пяти
+наиболее           интересных,           на           Ваш
+взгляд,&nbsp;</span><span             class=rvts8>            </span><span
+class=rvts7>командлетов PowerShell.</span></p> 
+<p         class=rvps58><span         class=rvts7>3.4.        Выполните
+индивидуальное задание.</span></p> 
+<p  class=rvps59><span  class=rvts7>  &nbsp;  &nbsp;  &nbsp;  &nbsp;&nbsp; 3.5. Выключите  компьютер  и  приведите
+в порядок рабочее&nbsp; место.</span></p> 
+<p         class=rvps60><span         class=rvts8>4.        Содержание
+отчета</span></p> 
+<p  class=rvps61><span  class=rvts7>  &nbsp;  &nbsp;  &nbsp;  &nbsp;&nbsp; 4.1.  Цель работы.</span></p> 
+<p          class=rvps62><span          class=rvts7>4.2.          Краткую
+характеристику    Windows   PowerShell   и   результаты
+выполнения     индивидуального    задания.&nbsp;
+</span></p> 
+<p          class=rvps63><span         class=rvts7>4.3.Выводы         по
+работе.</span></p> 
+<p        class=rvps64><span        class=rvts8>5.        Контрольные
+вопросы</span><span class=rvts7>.</span></p> 
+<p      class=rvps65><span      class=rvts7>1.       Дайте      общую
+характеристику Windows PowerShell.</span></p> 
+<p   class=rvps66><span   class=rvts7>2.&nbsp;   Чем   обусловлена
+необходимость создания PowerShell?</span></p> 
+<p  class=rvps67><span  class=rvts7>3.&nbsp;  Какие  типы  команд
+поддерживает        оболочка</span><span       class=rvts12>
+</span><span class=rvts7>PS?</span></p> 
+<p   class=rvps68><span   class=rvts7>4.&nbsp;   Чем   различаются
+командные оболочки CMD&nbsp; и PS?</span></p> 
+<p     class=rvps69><span     class=rvts7>5.     В     чем    состоит
+принципиальное  различие  сценариев  WSH и&nbsp;
+PS?</span></p> 
+<h2                     class=rvps70><span                     class=rvts0><span
+class=rvts8>Литература</span></span></h2> 
+<p class=rvps59><span class=rvts7><br></span></p>
+<p  class=rvps71><span  class=rvts7>1. Попов А.В.&nbsp; Введение
+в    Windows   PowerShell.   --   СПб.:   БХВ-Петербург,   2009.
+</span><span class=rvts17>–</span><span class=rvts7> 464c. </span></p> 
+<p  class=rvps72><span  class=rvts7>  &nbsp;  &nbsp;  &nbsp;  &nbsp;</span><span
+class=rvts7>2. Борн   Г.  Руководство  разработчика
+на   Microsoft&nbsp;  Script  Host  2.0.Мастер  класс/  Пер.  с
+англ.   </span><span   class=rvts17>–</span><span   class=rvts7>  СПб.:
+Питер,  2001.  </span><span class=rvts17>–</span><span class=rvts7> 480c.
+</span></p> 
+<p  class=rvps72><span  class=rvts7>  &nbsp;  &nbsp;  &nbsp;  &nbsp;</span><span
+class=rvts7>3. Торрес         Дж.        Скприпты        для
+администратора           Windows.           Специальный
+справочник.   </span><span  class=rvts17>–</span><span  class=rvts7>
+СПб.:    Питер,    2002.    </span><span    class=rvts17>–</span><span
+class=rvts7> 336c. </span></p>
+<p  class=rvps72>&nbsp;</p>
+<p  class=rvps72>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="../../practice.htm">
+<img src="../lb1/Menu.gif" width="73" height="22" class="style3"></a>&nbsp;</p> 
+<p class=rvps73><span class=rvts7> </span></p>
+</body></html>

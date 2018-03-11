@@ -1,0 +1,474 @@
+<html>
+
+<head>
+<meta content="text/html; charset=windows-1251" url="default.htm">
+<meta name="GENERATOR" content="KS Alex">
+<!-- bgsound src="../terminat.mid" loop="-1" -->
+<title>IP-Tools</title>
+<STYLE TYPE="text/css"> <!-- a:hover { color: "#00FF00"; } --> </STYLE>
+</head>
+
+<body bgcolor="#000000" text="#FFFFFF" vlink="#00FFFF" alink="#00FFFF" background="../images/ksbg2.jpg" link="#00FFFF">
+
+<p align="justify"><a name="HowUse"><strong>
+IP-Tools включает в себя 15 утилит для работы с TCP/IP сетями :</strong></a></p>
+
+<div align="justify"><justify>
+
+<table border="0" width="100%">
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid; border-top: 1px solid" bgcolor="#000000" background="../images/ksbg3.jpg"><strong>
+     <a name="page1"><font color=#00E0FF>Local Info</font></a></strong></td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid"><p align=justify>
+    отображает информацию о Вашем компьютере: процесор, память, WinSock, модемы, сетевые интерфейсы, таблица маршрутизации и т.д.
+    Информацию можно записать в текстовый или HTML файл, всю или по частям.
+    <a href="examples\Info.htm">Пример.</a><br>
+    &nbsp; </td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid" bgcolor="#000000" background="../images/ksbg3.jpg"><strong>
+     <a name="page2"><font color=#00E0FF>Connections</font></a></strong></td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid"><p align=justify>
+    эта утилита выдает информацию о том какие порты слушает ваша машина и с кем она соеденина.<br><br>
+    Refresh делается каждый раз при переключении на эту страницу или при выборе
+    пункта "Refresh" локального меню (вызывается правой кнопкой мыши).<br>
+    Начиная с версии 1.07 есть и AutoRefresh, а с версии 1.09 IP-Tools может 
+    записывать в Log File все изменения в статусах портов, можете оставить на ночь и утром посмотреть 
+    чем это по ночам занимается ваша машина и с кем она изменяет Вам.<br>
+    Кроме того Вы можете выставить фильтр по типу портов, по статусу портов, по IP адресам.<br>
+    Настройки утилиты находятся в диалоге "<a href="ipt_opt.htm">Options</a>" на странице "<a href="ipt_opt.htm#Connections">Connections</a>".<br>
+    Может помочь для обнаружения троянов типа backdoor.<br><br>
+    Возможные значения статусов TCP портов : <br>
+    <table border="0" width="100%">
+    <tr><td valign=top><b>CLOSED</b></td><td>  порт закрыт и никак не используется.</td></tr>
+    <tr><td valign=top><b>LISTENING</b></td><td>  порт открыт и ждет входящие соединения.</td></tr>
+    <tr><td valign=top><b>SYN_SENT</b></td><td>  послали запрос на на установление соединения, ожидание парного запроса.</td></tr>
+    <tr><td valign=top><b>SYN_RECEIVED </b></td><td>  ожидание подтверждения после того, как запрос соединения уже принят и отправлен.</td></tr>
+    <tr><td valign=top><b>ESTABLISHED</b></td><td>  соединение установлено.</td></tr>
+    <tr><td valign=top><b>CLOSE_WAIT</b></td><td>  ожидание запроса на закрытие соединения со стороны своего клиента.</td></tr>
+    <tr><td valign=top><b>FIN_WAIT_1</b></td><td>  ожидание запроса от чужой программы TCP, или подтверждения ранее отправленного запроса на закрытие соединения.</td></tr>
+    <tr><td valign=top><b>CLOSING</b></td><td>  ожидание подтверждения со стороны чужой программы TCP запроса о закрытии соединения.</td></tr>
+    <tr><td valign=top><b>LAST_ACK</b></td><td>  ожидание запроса на закрытие соединения, ранее 
+               отправленного чужой программе TCP (запрос включал также подтверждение получения чужого запроса на закрытие соединения).</td></tr>
+    <tr><td valign=top><b>FIN_WAIT_2</b></td><td>  ожидание запроса на закрытие соединения со стороны чужой программы TCP.</td></tr>
+    <tr><td valign=top><b>TIME_WAIT</b></td><td>  ожидание когда истечет достаточное количество времени 
+               и можно быть уверенным, что чужая программа TCP получила подтверждение своего запроса на закрытие соединения.</td></tr>
+    </table>
+    &nbsp; </td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid" bgcolor="#000000" background="../images/ksbg3.jpg"><strong>
+     <a name="page3"><font color=#00E0FF>NetBIOS</font></a></strong></td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid"><p align=justify>
+    можно увидеть информацию о своих сетевых интерфейсах, а
+    задав имя машины (типа &quot;123.23.21.12&quot; или &quot;www.uc.ru&quot; или если это машина
+    в локалке &quot;vova_computer&quot; или '*' для своей машины) и
+    диапазон номеров интерфейсов (типа 0-2) можно получить информацию 
+    сетевых интерфейсах удаленной машины : MAC адрес, таблицу имен, ...<br>
+    Работает если та машина поддерживает NetBIOS<br>
+    &nbsp;</td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid" bgcolor="#000000" background="../images/ksbg3.jpg"><strong>
+     <a name="page15"><font color=#00E0FF>NB Scanner</font></a></strong></td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid"><p align=justify>
+     можно просканировать зашаренные сетевые ресурсы  машин  из  заданного
+     диапазона или по заданному списку адресов. 
+     Результат сканирования можно записать примерно в такую <a href="examples\nbscan.htm">табличку</a>
+     (пункт "Save as HTML.." локального меню).
+     Настройки сканера в диалоге "<a href="ipt_opt.htm">Options</a>" на странице 
+     "<a href="ipt_opt.htm#NBScanner">NB Scanner</a>".<br>
+    &nbsp;</td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid" bgcolor="#000000" background="../images/ksbg3.jpg"><strong>
+     <a name="page4"><font color=#00E0FF>Name Scanner</font></a></strong></td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid"><p align=justify>
+    сканирование хоть всего интернета за раз изпользуя GetHostByName (выдает имя машин из DNS)
+    по диапазону адресов (например 1.1.1.1 - 255.255.255.255) или по списку 
+    адресов. Список адресов опеределяется в диалоге "<a href="ipt_opt.htm">Options</a>"
+    на странице "<a href="ipt_opt.htm#ScanList">ScanList</a>".<br>
+    &nbsp;</td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid" bgcolor="#000000" background="../images/ksbg3.jpg"><strong>
+     <a name="page5"><font color=#00E0FF>Port Scanner</font></a></strong></td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid"><p align=justify>
+    сканирование TCP портов хоть всего интернета за раз
+    по диапазону адресов (например 1.1.1.1 - 255.255.255.255)
+    или по списку адресов. Прежде чем сканировать порты программа может попытатся
+    узнать имя машины и пропинговать ее, кроме того при сканировании портов
+    IP-Tools может посылать заданную строку на сканируемый порт и показывать 
+    ответ от сервера.<br>
+    Список портов задается в в диалоговом окне "<a href="ipt_opt.htm">Options</a>"
+    на странице "<a href="ipt_opt.htm#Ports">Ports</a>", а параметры самого
+    сканирования на странице "<a href="ipt_opt.htm#PortScanner">Port Scanner</a>".<br>
+    <br>
+    What is a port?<br>
+    The TCP port number identifies a process or application inside the computer.<br>
+    &nbsp; Any application or process that uses TCP for its transport is assigned a
+    unique identification number called a TCP port. These ports are numbered 
+    beginning with zero. Port numbers for client applications are dynamically
+    assigned by the operating system when there is a request for service. Port
+    numbers for server applications are preassigned by the IANA 
+    (Internet Assigned Numbers Authority) and do not change.<br>    
+    &nbsp; A server application or process that uses TCP as a transport has at least
+    one preassigned port number. For example, the preassigned port numbers for
+    FTP server services are 20 (data) and 21 (control).<br>
+    &nbsp;</td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid" bgcolor="#000000" background="../images/ksbg3.jpg"><strong>
+     <a name="page6"><font color=#00E0FF>Ping Scanner</font></a></strong></td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid"><p align=justify>
+    Ping тоже можна сделать по диапазону адресов или по списку адресов.<br>
+    Настройки находятся в диалоговом окне "<a href="ipt_opt.htm">Options</a>"
+    на странице "<a href="ipt_opt.htm#PingTrace">Ping/Trace</a>"<br>
+    <br>
+    What is a Ping?<br>
+    the ping command verifies connections to remote computer or computers, by
+    sending ICMP (Internet Control Message Protocol) echo packets to the 
+    computer and listening for echo reply packets.
+    You may ping single computer, ping computers from diapason of IP addresses
+    or ping computers from list.
+    Also you may choose Packet Size, Timeout, Packets to send, TTL.<br>
+    &nbsp;</td>
+<!--<br>
+    What is a packet?<br>
+    The unit of data sent across a packet switching network.<br>
+    <br>
+    What is a RTT?<br>
+    (Round Trip Time) A measure of delay between two hosts. The round trip time consists of
+    the total time taken for a single packet or datagram to leave one machine, reach the
+    other, and return.<br>
+    <br>
+    What is a TTL?<br>
+    (Time To Live) A technique used in best-effort delivery systems to avoid endlessly looping
+    packets. For example, each IP datagram is assigned an integer time to live when it is
+    created. IP gateways decrement the time to live field when they process a datagram and
+    discard the datagram if the time to live counter reaches zero.<br> -->
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid" bgcolor="#000000" background="../images/ksbg3.jpg"><strong>
+     <a name="page7"><font color=#00E0FF>Trace</font></a></strong></td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid"><p align=justify>
+    Trace как Trace<br>
+    показывает маршрут по которому бегают ваши IP пакетики до заданного контупера<br>
+    Настройки находятся в диалоговом окне "<a href="ipt_opt.htm">Options</a>"
+    на странице "<a href="ipt_opt.htm#PingTrace">Ping/Trace</a>"<br><br>
+
+    How Trace work ?<br>
+    Program determines the route taken to a destination by sending 
+    Internet Control Message Protocol (ICMP) echo packets with varying
+    TTL (Time-To-Live) values to the destination. Each router along the path is
+    required to decrement the TTL on a packet by at least 1 before forwarding
+    it, so the TTL is effectively a hop count. When the TTL on a packet reaches
+    0, the router is supposed to send back an ICMP Time Exceeded message to the
+    source system. Trace determines the route by sending the first echo
+    packet with a TTL of 1 and incrementing the TTL by 1 on each subsequent
+    transmission until the target responds or the maximum TTL is reached. The
+    route is determined by examining the ICMP Time Exceeded messages sent back
+    by intermediate routers. Notice that some routers silently drop packets
+    with expired time-to-live (TTL) and will be invisible to trace.<br>
+    &nbsp; </td>
+<!--What is a Trace?<br>
+    The name of a network diagnostic tool that reports the list of gateways between the source
+    and a particular destination.<br>
+    <br>
+    What is a Hop?<br>
+    A measure of distance between two points in an internet. A hop count of n means that n
+    gateways separate the source and destination.<br>-->
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid" bgcolor="#000000" background="../images/ksbg3.jpg"><strong>
+     <a name="page8"><font color=#00E0FF>WhoIs</font></a></strong></td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid"><p align=justify>
+    получает регистрационную информацию о доменах с официальных WhoIs серверов.
+    Например, если Вы хотите получить информацию о том кому принадлежит сервер
+    "www.brainriver.com" введите имя домена "brainriver.com" и узнаете
+    имена, телефоны, почтовые адреса владельцев и/или администраторов.<br><br>
+
+    IP-Tools содержит встроенный список WhoIs серверов для всех top level доменов.
+    Но Вы можете создать ваш собственный список (диалог <a href="ipt_opt.htm">Options</a>, страница <a href="ipt_opt.htm#WhoIs">WhoIs</a>), 
+    причем информация из Вашего списка имеет приоритет выше чем из внутреннего списка
+    (тоесть IP-Tools будет искать сервер во внутреннем списке только если не найдет в Вашем).<br>
+    &nbsp; </td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid" bgcolor="#000000" background="../images/ksbg3.jpg"><strong>
+     <a name="page9"><font color=#00E0FF>Finger</font></a></strong></td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid"><p align=justify>
+    выдает информацию о пользователе (пользователях) заданного хоста (если 
+    конечно на нем запущен Finger сервис).
+    Показывет имя пользователя, его домашний каталог, login time, idle times,
+    время последнего получения почты и время последнего чтения почты, etc.<br>
+    <br>
+    Синтаксис запроса :<br>
+    <b>user@host.domain</b> для получения информации о конкретном пользователе
+    или <b>host.domain</b> для получения информации о всех пользователях.<br>
+    &nbsp; </td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid" bgcolor="#000000" background="../images/ksbg3.jpg"><strong>
+     <a name="page10"><font color=#00E0FF>LookUp</font></a></strong></td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid"><p align=justify>
+    выдает информацию о имени хоста, его IP адресе и алиасах (если они есть)
+    из DNS. Вы можете задать либо имя хоста (например www.chat.ru) либо его
+    IP адрес (212.24.32.192). 
+    Также эта утилита может работать со списком адресов.<br><br>
+    
+    Кроме того в IP-Tools 2.0 или выше Вы можете переключить эту утилиту в режим
+    "Advanced Name Server Lookup". В этом случае Вы сможете изменить:
+    <ul>
+     <li> DNS сервер
+     <li> порт и протокол (TCP, UDP)
+     <li> таймаут и количество попыток получить ответ от сервера
+     <li> тип запроса: A, ANY, CNAME, HINFO, MX, NS, PTR, SOA, или TXT
+     <li> включить или отключить рекурсию
+     <li> режим вывода информации: Full, Medium, или Compact
+    </ul>
+    IP-Tools поддерживает следующие типы записей:
+    <ul>
+     <li><b> A     </b> - a host address
+     <li><b> NS    </b> - an authoritative name server
+     <li><b> MD    </b> - a mail destination
+     <li><b> MF    </b> - a mail forwarder
+     <li><b> CNAME </b> - the canonical name for an alias
+     <li><b> SOA   </b> - marks the start of a zone of authority
+     <li><b> MB    </b> - a mailbox domain name
+     <li><b> MG    </b> - a mail group member
+     <li><b> MR    </b> - a mail rename domain name
+<!-- <li><b> NULL  </b> - a null RR (EXPERIMENTAL) -->
+     <li><b> WKS   </b> - a well known service description
+     <li><b> PTR   </b> - a domain name pointer
+     <li><b> HINFO </b> - host information
+     <li><b> MINFO </b> - mailbox or mail list information
+     <li><b> MX    </b> - mail exchange
+     <li><b> TXT   </b> - text strings
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid" bgcolor="#000000" background="../images/ksbg3.jpg"><strong>
+     <a name="page11"><font color=#00E0FF>Get Time</font></a></strong></td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid"><p align=justify>
+    получает время с TimeServers (с серверов точного времени)<br><br>
+    Причем  программа  может  синхронизировать  время  в автоматическом режиме,
+    например каждый раз при загрузке машины.
+    Для этого нужно запустить программу с параметрами:<br>
+    <b> &gt ip_tools.exe &nbsp; /SetTime &nbsp; TryCount &nbsp; Host1 &nbsp; [Host2 &nbsp; [Host3 &nbsp; [...]]</b><br>
+    где :<br>
+    &nbsp;&nbsp;  TryCount - число попыток соединения с указанными серверами (0..255)<br>
+    &nbsp;&nbsp;  Host1 .. HostN - адреса серверов точного времени<br>
+    программа  по  очереди пытается соединится с серверами, если ей это удалось
+    она  получает  время,  устанавливает  его  на  локальной машине и завершает
+    работу.  Если  же  программа  не  может  соединится  с  сервером  она берет
+    следующий адрес из списка, если список пройден до конца, программа начинает
+    с начала списка, и так TryCount раз.<br>
+    <b>Example :&gt ip_tools.exe &nbsp; /SetTime &nbsp; 2 &nbsp; xa.xa.net &nbsp; 192.43.244.18</b><br>
+    &nbsp; </td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid" bgcolor="#000000" background="../images/ksbg3.jpg"><strong>
+     <a name="page12"><font color=#00E0FF>Telnet</font></a></strong></td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid"><p align=justify>
+    Telnet client<br>
+    <p align=justify>
+    Telnet client - программа эмулирующая терминал в TCP/IP сетях (типа Internet), 
+    ее назначение позволять пользователю соединятся с удаленным компьютером и водить команды
+    которые будут выполнятся так как если бы пользователь вводил эти команды непосредственно на
+    удаленной машине.<br><br>
+
+    На этой странице два окошка :<br>
+    - нижнее почти не умеет обрабатывать ESC последовательности зато запоминает все что в
+    него попадает, работает как лог.<br>
+    - верхнее окно это и есть telnet клиент, виртуальный терминал, который обрабатывает ESC
+    последовательности но помнит только то что поместилось на его консоль.<br>
+    Вообщем у меня даже получилось поиграть в Tetris.<br>
+    &nbsp; </td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid" bgcolor="#000000" background="../images/ksbg3.jpg"><strong>
+     <a name="page13"><font color=#00E0FF>IP Monitor</font></a></strong></td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid">
+    IP-Monitor показывает в реальном масштабе времени графики количества входящих, 
+    выходящих, ошибочных пакетов для протоколов TCP,UDP,ICMP.<br>
+    <br>
+  <img src="../images/ip_mon.gif" border="0" align="right">
+  <b>TCP In</b> - общее количество полученных TCP пакетов.<br>
+  <b>TCP Out</b> - общее количество оправленных TCP пакетов.<br><br>
+
+  <b>UDP In</b> - общее количество полученных UDP датаграмм.<br>
+  <b>UDP Out</b> - общее количество отправленных UDP датаграмм.<br>
+  <b>UDP Error</b> - количество полученных UDP пакетов не понятно кому нужных.<br><br>
+  <p align=justify>
+  <b>ICMP In</b> - общее количество полученных ICMP пакетов (включая ошибочные).<br>
+  <b>ICMP Out</b> - общее количество отправленных ICMP пакетов (включая ошибочные).<br>
+  <b>ICMP Error</b>
+    - количество ICMP пакетов которые были получены но определены как содержащие ошибки
+    (плохая контрольная сумма, неверная длина, и т.д.)
+    &nbsp;&nbsp; <b> + </b> &nbsp;&nbsp;
+    количество ICMP пакетов которые не получилось отправить из-за разных проблем,
+    например недостаточного размера буфера.<br>&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="100%" style="border-bottom: 1px solid" bgcolor="#000000" background="../images/ksbg3.jpg"><strong>
+     <a name="page14"><font color=#00E0FF>Host Monitor</font></a></strong></td>
+  </tr>
+  <tr>
+    <td width="100%"><p align=justify>
+     Hosts Monitor умеет  пинговать  заданные  хосты  и  показывать  их статус
+     (Up/Down).<br><br>  Интервалы  через  которые  нужно  проверять  хосты  и параметры
+     пингования  задаются  отдельно  для  каждого  хоста.  Программа также может
+     проигрывать  wav файлы при изменении состояния хоста и записывать изменения
+     статуса хостов в Log file.<br><br>
+     Начиная с версии 1.09 для каждого хоста можно задать команды для запуска
+     внешних програм которые будут выполнятся если хост меняет статус dead -> alive или наоборот.
+     В команде можно задавать макроподстановки : <br>
+     &nbsp;&nbsp;  <b>%DateTime%</b> - IP-Tools подставит дату и время <br>
+     &nbsp;&nbsp;  <b>%HostName%</b> - IP-Tools подставит имя хоста<br>
+     В каталоге "SAMPLES\" есть примеры :<br>
+     &nbsp; - "message.exe" - программа message которая просто выводит диалоговое окно с текстом который передается через командную строчку<br>
+     &nbsp; - "sendmail.exe" - программа которая может отсылать письма без участия человека
+       при этом все нужные параметры можно передать через командную строчку<br>
+     Например можно задать такую команду <b>"samples\sendmail.exe  To=admin@firm.com  "Subject=%datetime% host %hostname% is Dead"  StartAfterLoad"</b><br>
+     А поскольку по e-mail можно отправлять сообщения даже на пейджер то IP-Tools может сообщить админу о падении сервера даже на пляже (чему он несомненно обрадуется ;-) <br><br>
+
+     Но если Вам нужна продвинутая программа для контроля роутеров, серверов,
+     TCP сервисов и других сетевых и локальных ресурсов то Вы можете попробовать
+     <a href="http://www.ks-soft.net/hostmon.eng/index.htm" target=_top>Advanced Host Monitor</a>. 
+     Этот монитор с набором различных методов тестирования и реакции на изменения
+     статуса ресурсов умеет вести запись лога в файлы различного формата
+     (DBF, Text, HTML) имеет встроенный анализатор логов и широкий набор настроек.
+
+    </td></tr>
+</table>
+</center></div>
+<hr>
+
+<!-----------------------------------------
+<p>А еще программа имеет всякие менюшки, <a href="ipt_opt.htm">диалоги с настройками</a>, etc.<br></p>
+
+<p><u><b><font color=#00E0FF>Program's menu</font></b></u><br><br>
+<table border="0" width="100%">
+  <tr>
+    <td><strong>File</strong></td>
+    <td><strong>Save to File</strong></td>
+    <td>запись полученной информации в файлы</td>
+  </tr>
+  <tr>
+    <td><strong></strong></td>
+    <td><strong>Exit</strong></td>
+    <td>закрыть программу</td>
+  </tr>
+  <tr>
+    <td><strong></strong></td> <td><strong></strong></td> <td></td>
+  </tr>
+  <tr>
+    <td><strong>View</strong></td>
+    <td><strong>[many items]</strong></td>
+    <td>выбор утилит</td>
+  </tr>
+  <tr>
+    <td><strong></strong></td> <td><strong></strong></td> <td></td>
+  </tr>
+  <tr>
+    <td><strong><a href="ipt_opt.htm">Options</a></strong></td>
+    <td><strong>Scan List </strong></td>
+    <td>тут можно задать список имен хостов и адресов для сканеров</td>
+  </tr>
+  <tr>
+    <td><strong></strong></td>
+    <td><strong>Ports</strong></td>
+    <td>список портов для сканера</td>
+  </tr>
+  <tr>
+    <td><strong></strong></td>
+    <td><strong>Ping/Trace</strong></td>
+    <td>настройки для ping/trace (Timeout, TTL, etc)</td>
+  </tr>
+  <tr>
+    <td><strong></strong></td>
+    <td><strong>Advanced</strong></td>
+    <td>настройки для сканера портов и сканера зашареных ресурсов</td>
+  </tr>
+  <tr>
+    <td><strong></strong></td>
+    <td><strong>Connections</strong></td>
+    <td>настройка параметров утилиты "Connections"</td>
+  </tr>
+  <tr>
+    <td><strong></strong></td>
+    <td><strong>IP Monitor</strong></td>
+    <td>настройка IP-Monitor'а (refresh time,colors,..)</td>
+  </tr>
+  <tr>
+    <td><strong></strong></td>
+    <td><strong>Interface</strong></td>
+    <td>настройка интерфейса (colors, fonts, language, etc)</td>
+  </tr>
+  <tr>
+    <td><strong></strong></td>
+    <td><strong>Sound</strong></td>
+    <td>настройка звуковых эффектов</td>
+  </tr>
+  <tr>
+    <td><strong></strong></td> <td><strong></strong></td> <td></td>
+  </tr>
+  <tr>
+    <td><strong>Help</strong></td>
+    <td><strong>Help</strong></td>
+    <td>help</td>
+  </tr>
+  <tr>
+    <td><strong></strong></td>
+    <td><strong>Home Page</strong></td>
+    <td>домашняя страница программы в Интернете</td>
+  </tr>
+  <tr>
+    <td><strong></strong></td>
+    <td><strong>About</strong></td>
+    <td>информация о программе и авторе</td>
+  </tr>
+  <tr>
+    <td><strong></strong></td>
+    <td><strong>License</strong></td>
+    <td>информация о регистрации и сама регистрация</td>
+  </tr>
+</table>
+-------------------------------------------------->
+<br>
+ В любой утилите можно нажать правую кнопку мыши для вызова контекстного меню.<br><br>
+
+<hr>
+
+</body>
+</html>

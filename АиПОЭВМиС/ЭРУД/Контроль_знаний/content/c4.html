@@ -1,0 +1,1508 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>c4</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+body {
+  margin: 5px 5px 5px 5px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Normal text */
+{
+ font-size: 10pt;
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1 /* Heading */
+{
+ font-weight: bold;
+ color: #0000ff;
+}
+span.rvts2 /* Subheading */
+{
+ font-weight: bold;
+ color: #000080;
+}
+span.rvts3 /* Keywords */
+{
+ font-style: italic;
+ color: #800000;
+}
+a.rvts4, span.rvts4 /* Jump 1 */
+{
+ color: #008000;
+ text-decoration: underline;
+}
+a.rvts5, span.rvts5 /* Jump 2 */
+{
+ color: #008000;
+ text-decoration: underline;
+}
+span.rvts6
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts7
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts8
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts9
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts10
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #000000;
+}
+span.rvts11
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts12
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts13
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts14
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts15
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts16
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #000000;
+ letter-spacing: -1px;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1 /* Centered */
+{
+ text-align: center;
+}
+.rvps2
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-after: avoid;
+ padding: 0px 0px 0px 0px;
+ margin: 16px 0px 4px 0px;
+}
+.rvps3
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 8px 4px 0px 4px;
+}
+.rvps4
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps5
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps6
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps7
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps8
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps9
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps10
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps11
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps12
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps13
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps14
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps15
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps16
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps17
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps18
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps19
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps20
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps21
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps22
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps23
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps24
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps25
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 8px 4px 0px 4px;
+}
+.rvps26
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps27
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps28
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps29
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps30
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps31
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps32
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps33
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps34
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 8px 4px 0px 4px;
+}
+.rvps35
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps36
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps37
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 8px 4px 0px 4px;
+}
+.rvps38
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 8px 4px 0px 4px;
+}
+.rvps39
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 8px 4px;
+}
+.rvps40
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps41
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps42
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps43
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps44
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps45
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps46
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps47
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps48
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps49
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps50
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps51
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps52
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps53
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps54
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps55
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps56
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps57
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps58
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps59
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps60
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps61
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps62
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps63
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps64
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps65
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps66
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps67
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps68
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps69
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps70
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 8px 4px;
+}
+.rvps71
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps72
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps73
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps74
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps75
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps76
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps77
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps78
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps79
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps80
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps81
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps82
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps83
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps84
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps85
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps86
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps87
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps88
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps89
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps90
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps91
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps92
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps93
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps94
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps95
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps96
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps97
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps98
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps99
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps100
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps101
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps102
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 8px 4px 0px 4px;
+}
+.rvps103
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps104
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps105
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps106
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps107
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps108
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps109
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps110
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps111
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps112
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps113
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps114
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps115
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps116
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps117
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps118
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps119
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps120
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps121
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps122
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps123
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps124
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps125
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps126
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps127
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps128
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps129
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps130
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps131
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps132
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps133
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps134
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps135
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps136
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps137
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps138
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps139
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps140
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps141
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps142
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps143
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps144
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps145
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps146
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps147
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps148
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps149
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps150
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps151
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps152
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps153
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps154
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps155
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps156
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps157
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 8px 4px 0px 4px;
+}
+.rvps158
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps159
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps160
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps161
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps162
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps163
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps164
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps165
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 8px 4px 0px 4px;
+}
+.rvps166
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps167
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps168
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps169
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps170
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps171
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps172
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps173
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps174
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps175
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps176
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps177
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps178
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps179
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps180
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.rvps181
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 0px 4px 0px 4px;
+}
+.style3 {
+	border-width: 0px;
+}
+--></style>
+</head>
+<body>
+<h4                      class=rvps2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="../test.htm">
+<img src="../../Практика/content/lb1/Menu.gif" width="73" height="22" class="style3"></a>&nbsp;</h4>
+<p                      class=rvps2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<span                     class=rvts0><span
+class=rvts6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Контрольные вопросы темы&nbsp; №4</span></span></p>
+<p>&nbsp;</p>
+<p  class=rvps3><span class=rvts8>1. Какой из названных ниже
+способов     коммутаций     не     относится     к
+оперативной коммутации?</span></p> 
+<p         class=rvps4><span         class=rvts8>а)        коммутация
+каналов;</span></p> 
+<p         class=rvps5><span         class=rvts8>б)        коммутация
+сообщений;</span></p> 
+<p       class=rvps6><span       class=rvts8>в)&nbsp;      коммутация
+пакетов;</span></p> 
+<p          class=rvps7><span         class=rvts8>г)         кроссовая
+коммутация.</span></p> 
+<p class=rvps8><span class=rvts8><br></span></p>
+<p  class=rvps9><span class=rvts8>2. Какие из названных ниже
+протоколов  реализуют дейтаграммный способ
+передачи пакетов?</span></p> 
+<p class=rvps10><span class=rvts8>а)&nbsp; IP; </span></p>
+<p class=rvps11><span class=rvts8>б)&nbsp; UDP;</span></p>
+<p class=rvps12><span class=rvts8>в)&nbsp; TCP;</span></p>
+<p class=rvps13><span class=rvts8>г)&nbsp; SPX.</span></p>
+<p    class=rvps14><span    class=rvts8>    3.   Обеспечивает   ли
+протокол  SLIP  установление соединения через
+несколько узлов?</span></p> 
+<p class=rvps15><span class=rvts8>а)&nbsp; да; </span></p>
+<p class=rvps16><span class=rvts8>б)&nbsp; нет.</span></p>
+<p class=rvps17><span class=rvts8><br></span></p>
+<p  class=rvps18><span  class=rvts8>4.  Позволяет ли протокол
+PPP&nbsp;       передавать      по      каналу      связи
+одновременно             пакеты             различных
+протоколов?</span></p> 
+<p class=rvps19><span class=rvts8>а)&nbsp; да; </span></p>
+<p class=rvps20><span class=rvts8>б)&nbsp; нет.</span></p>
+<p class=rvps21><span class=rvts8><br></span></p>
+<p     class=rvps22><span     class=rvts8>5.    Обеспечивает    ли
+протокол&nbsp;  PPTP  защищенный&nbsp; доступ через
+Internet?</span></p> 
+<p class=rvps23><span class=rvts8>а)&nbsp; да; </span></p>
+<p class=rvps24><span class=rvts8>б)&nbsp; нет.</span></p>
+<p class=rvps25><span class=rvts8><br></span></p>
+<p    class=rvps26><span    class=rvts8>6.    Какой   из   методов
+согласования  протоколов является наиболее
+простым?</span></p> 
+<p class=rvps27><span class=rvts8>а) инкапсуляция; </span></p>
+<p class=rvps28><span class=rvts8>б) трансляция ;</span></p>
+<p                    class=rvps29><span                   class=rvts8>в)&nbsp;
+мультиплексирование.</span></p> 
+<p class=rvps30><span class=rvts8><br></span></p>
+<p   class=rvps31><span   class=rvts8>7. Является   ли   </span><span
+class=rvts9>уровень   межсетевого   обмена  </span><span
+class=rvts10>базовым       в      архитектуре      стека
+TCP/IP?</span></p> 
+<p class=rvps32><span class=rvts8>а)&nbsp; да; </span></p>
+<p class=rvps33><span class=rvts8>б)&nbsp; нет.</span></p>
+<p   class=rvps34><span   class=rvts8>8.  Относятся  ли  </span><span
+class=rvts10>к     уровню    межсетевого    обмена&nbsp;
+протоколы маршрутизации?</span></p> 
+<p class=rvps35><span class=rvts8>а)&nbsp; да; </span></p>
+<p class=rvps36><span class=rvts8>б)&nbsp; нет.</span></p>
+<p class=rvps37><span class=rvts8><br></span></p>
+<p  class=rvps38><span class=rvts8>9. Какая версия протокола
+IP    имеет    в    настоящее   время   наибольшее
+распространение? </span></p> 
+<p class=rvps39><span class=rvts8>а) IPv2; </span></p>
+<p class=rvps40><span class=rvts8>б) IPv4;</span></p>
+<p class=rvps41><span class=rvts8>в) IPv6.</span></p>
+<p class=rvps42><span class=rvts8><br></span></p>
+<p   class=rvps43><span   class=rvts8>10.   Каков   размер   поля
+«Контрольная     сумма»     пакета    протокола
+IPv4?</span></p> 
+<p class=rvps44><span class=rvts8>а) 1 байт; </span></p>
+<p class=rvps45><span class=rvts8>б) 2 байта;</span></p>
+<p class=rvps46><span class=rvts8>в) 4 байта.</span></p>
+<p class=rvps47><span class=rvts8><br></span></p>
+<p  class=rvps48><span  class=rvts8>11.  Используется  ли поле
+«Смещение   фрагмента»   при  восстановлении
+исходного IP-пакета?</span></p> 
+<p class=rvps49><span class=rvts8>а)&nbsp; да; </span></p>
+<p class=rvps50><span class=rvts8>б)&nbsp; нет.</span></p>
+<p class=rvps51><span class=rvts8><br></span></p>
+<p     class=rvps52><span     class=rvts8>12.     Какой    из    ниже
+приведенных   классов  IP-сетей  обеспечивает
+наибольшее    количество    возможных    узлов
+сети?</span></p> 
+<p class=rvps53><span class=rvts8>а)&nbsp; Класс А; </span></p>
+<p class=rvps54><span class=rvts8>б)&nbsp; Класс В;</span></p>
+<p class=rvps55><span class=rvts8>в)&nbsp; Класс С.</span></p>
+<p class=rvps56><span class=rvts8><br></span></p>
+<p   class=rvps57><span   class=rvts10>13.   Распределяются   ли
+IP-адреса      класса     А     с     использованием
+протокола</span><span          class=rvts11>&nbsp;         </span><span
+class=rvts10>CIDR?</span></p> 
+<p class=rvps58><span class=rvts8>а)&nbsp; да; </span></p>
+<p class=rvps59><span class=rvts8>б)&nbsp; нет.</span></p>
+<p class=rvps60><span class=rvts8><br></span></p>
+<p  class=rvps61><span  class=rvts8>14. Используется ли адрес
+127.0.0.1 для тестирования программ?</span></p> 
+<p class=rvps62><span class=rvts8>а)&nbsp; да; </span></p>
+<p class=rvps63><span class=rvts8>б)&nbsp; нет.</span></p>
+<p class=rvps64><span class=rvts8><br></span></p>
+<p   class=rvps65><span   class=rvts8>15.   Относится   ли   сеть
+172.21.0.0    к    сетям    частного    применения   (к
+«серым» сетям)?</span></p> 
+<p class=rvps66><span class=rvts8>а)&nbsp; да; </span></p>
+<p class=rvps67><span class=rvts8>б)&nbsp; нет.</span></p>
+<p class=rvps68><span class=rvts8><br></span></p>
+<p     class=rvps69><span    class=rvts8>16. Какое    количество
+подсетей  позволяет  получить маска подсети
+255.255.255.192?</span></p> 
+<p class=rvps70><span class=rvts8>а)&nbsp;&nbsp; 2; </span></p>
+<p class=rvps71><span class=rvts8>б)&nbsp;&nbsp; 4;</span></p>
+<p class=rvps72><span class=rvts8>в)&nbsp;&nbsp; 8.</span></p>
+<p    class=rvps73><span    class=rvts8>17.    К    какому   классу
+относится сеть 192.168.02.0 /24?</span></p> 
+<p class=rvps74><span class=rvts8>а)&nbsp; Класс А; </span></p>
+<p class=rvps75><span class=rvts8>б)&nbsp; Класс В;</span></p>
+<p class=rvps76><span class=rvts8>в)&nbsp; Класс С.</span></p>
+<p class=rvps77><span class=rvts8><br></span></p>
+<p    class=rvps78><span    class=rvts8>18.   Применяется   ли   в
+протоколе       IPv6&nbsp;       концепция      классов
+IP-адресов?</span></p> 
+<p class=rvps79><span class=rvts8>а)&nbsp; да; </span></p>
+<p class=rvps80><span class=rvts8>б)&nbsp; нет.</span></p>
+<p class=rvps81><span class=rvts8><br></span></p>
+<p   class=rvps82><span   class=rvts8>19.   Каков   размер   поля
+«Адрес отправителя» в заголовке IPv6?</span></p> 
+<p class=rvps83><span class=rvts8>а)&nbsp; 6 байтов; </span></p>
+<p class=rvps84><span class=rvts8>б)&nbsp; 8 байтов;</span></p>
+<p class=rvps85><span class=rvts8>в)&nbsp; 16 байтов.</span></p>
+<p class=rvps86><span class=rvts8><br></span></p>
+<p      class=rvps87><span      class=rvts8>20. Какие     значения
+поля</span><span  class=rvts6> </span><span class=rvts8>"Приоритет"
+в   заголовке  IPv6  (RFC  1883)  использовались  при
+передаче&nbsp; мультимедийной
+информации?</span></p> 
+<p class=rvps88><span class=rvts8>а)&nbsp; 0-3; </span></p>
+<p class=rvps89><span class=rvts8>б)&nbsp; 4-7;</span></p>
+<p class=rvps90><span class=rvts8>в)&nbsp; 8-15.</span></p>
+<p class=rvps91><span class=rvts8><br></span></p>
+<p     class=rvps92><span    class=rvts8>21. Поле    «Приоритет»
+заголовка  IPv6  (RFC  1883)  в  RFC 2460&nbsp;&nbsp; заменено
+на поле по имени:&nbsp;</span><span class=rvts6> </span></p> 
+<p   class=rvps93><span   class=rvts8>а)&nbsp;  «Класс  трафика»;
+</span></p> 
+<p     class=rvps94><span     class=rvts8>б)&nbsp;&nbsp;     «Качество
+QoS».</span></p> 
+<p class=rvps95><span class=rvts8><br></span></p>
+<p class=rvps96><span class=rvts8><br></span></p>
+<p   class=rvps97><span   class=rvts8>22.   По  какому  из  типов
+адресов  протокола IPv6 пакет доставляется по
+одному     из     интерфейсов,     указанному    в
+адресе?</span></p> 
+<p   class=rvps98><span  class=rvts8>а)</span><span  class=rvts6>  </span><span
+class=rvts8>Unicast; </span></p> 
+<p class=rvps99><span class=rvts8>б) Anycast;</span></p>
+<p class=rvps100><span class=rvts8>в) Multicast.</span></p>
+<p class=rvps101><span class=rvts8><br></span></p>
+<p   class=rvps102><span  class=rvts10>23. Соответствует  ли  в
+IPv6     сокращенная     запись     FC14::0013     такому
+IP-адресу:&nbsp; FC14:1030:0000:0000:0000:0000:0000:0013?</span><span
+class=rvts11> </span></p> 
+<p class=rvps103><span class=rvts8>а)&nbsp; да; </span></p>
+<p class=rvps104><span class=rvts8>б)&nbsp; нет.</span></p>
+<p class=rvps105><span class=rvts8><br></span></p>
+<p  class=rvps106><span  class=rvts8>24. Соответствует ли в IPv6
+префикс                  010                 провайдерскому
+уникаст-адресу?</span></p> 
+<p class=rvps107><span class=rvts8>а)&nbsp; да; </span></p>
+<p class=rvps108><span class=rvts8>б)&nbsp; нет.</span></p>
+<p class=rvps109><span class=rvts8><br></span></p>
+<p   class=rvps110><span   class=rvts8>25.   Содержат   ли   в   IPv6
+младшие    6    байт    идентификатора   узла&nbsp;
+MAC-адрес&nbsp; сетевого адаптера?</span></p> 
+<p class=rvps111><span class=rvts8>а)&nbsp; да; </span></p>
+<p class=rvps112><span class=rvts8>б)&nbsp; нет.</span></p>
+<p class=rvps113><span class=rvts8><br></span></p>
+<p     class=rvps114><span     class=rvts8>26.     Использует     ли
+протокол RARP&nbsp; формат ARP-пакета?</span></p> 
+<p class=rvps115><span class=rvts8>а)&nbsp; да; </span></p>
+<p class=rvps116><span class=rvts8>б)&nbsp; нет.</span></p>
+<p class=rvps117><span class=rvts8><br></span></p>
+<p      class=rvps118><span      class=rvts8>27.      Является      ли
+протокол</span><span              class=rvts6>              </span><span
+class=rvts8>ICMP&nbsp;&nbsp; обязательным
+стандартом?</span></p> 
+<p class=rvps119><span class=rvts8>а)&nbsp; да; </span></p>
+<p class=rvps120><span class=rvts8>б)&nbsp; нет.</span></p>
+<p class=rvps121><span class=rvts8><br></span></p>
+<p  class=rvps122><span  class=rvts8>28.&nbsp;  Каков размер поля
+«Длина пакета» заголовка UDP-пакета?</span></p> 
+<p class=rvps123><span class=rvts8>а) 1 байт; </span></p>
+<p class=rvps124><span class=rvts8>б)&nbsp; 2 байта;</span></p>
+<p class=rvps125><span class=rvts8>в)&nbsp; 4 байта.</span></p>
+<p class=rvps126><span class=rvts8><br></span></p>
+<p   class=rvps127><span   class=rvts8>29.   В   каком  диапазоне
+находятся  присвоенные  (зарезервированные)
+порты UDP?</span></p> 
+<p class=rvps128><span
+class=rvts8>а)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  0  </span><span
+class=rvts12>–</span><span class=rvts8> 1023; </span></p> 
+<p   class=rvps129><span   class=rvts8>б)&nbsp;&nbsp;  1024&nbsp;  </span><span
+class=rvts12>–</span><span class=rvts8> 2047;</span></p> 
+<p    class=rvps130><span    class=rvts8>в)&nbsp;&nbsp;    2048    </span><span
+class=rvts12>–</span><span class=rvts8> 65535.</span></p> 
+<p class=rvps131><span class=rvts8><br></span></p>
+<p   class=rvps132><span   class=rvts8>30.   Каков   размер  поля
+«Окно» заголовка&nbsp; TCP-пакета?</span></p> 
+<p class=rvps133><span class=rvts8>а)&nbsp; 1 байт; </span></p>
+<p class=rvps134><span class=rvts8>б)&nbsp; 2 байта;</span></p>
+<p class=rvps135><span class=rvts8>в)&nbsp; 3 байта.</span></p>
+<p class=rvps136><span class=rvts8><br></span></p>
+<p    class=rvps137><span    class=rvts8>31.    Посылается   ли   в
+протоколе                 TCP                отрицательные
+квитанции?</span></p> 
+<p class=rvps138><span class=rvts8>а)&nbsp; да; </span></p>
+<p class=rvps139><span class=rvts8>б)&nbsp; нет.</span></p>
+<p class=rvps140><span class=rvts8><br></span></p>
+<p   class=rvps141><span   class=rvts8>32.   Может   ли  изменять
+размер   скользящего  окна  в  протоколе  TCP  в
+процессе передачи данных?</span></p> 
+<p class=rvps142><span class=rvts8>а)&nbsp; да; </span></p>
+<p class=rvps143><span class=rvts8>б)&nbsp; нет.</span></p>
+<p class=rvps144><span class=rvts8><br></span></p>
+<p    class=rvps145><span    class=rvts8>33.    Относится    ли    к
+прикладному уровню протокол DNS?</span></p> 
+<p class=rvps146><span class=rvts8>а)&nbsp; да; </span></p>
+<p class=rvps147><span class=rvts8>б)&nbsp; нет.</span></p>
+<p  class=rvps148><span  class=rvts8>34. Какие из приведенных
+ниже  протоколов не относятся к прикладному
+уровню стекаTCP/IP? </span></p> 
+<p class=rvps149><span class=rvts8>а)&nbsp; FTP;</span></p>
+<p class=rvps150><span class=rvts8>б) TFTP;</span></p>
+<p class=rvps151><span class=rvts8>в) SMTP; </span></p>
+<p class=rvps152><span class=rvts8>г)&nbsp; HTTP;</span></p>
+<p class=rvps153><span class=rvts8>д) SPX;</span></p>
+<p       class=rvps154><span       class=rvts8>е)       IMAP      4</span><span
+class=rvts10>;</span></p> 
+<p  class=rvps155><span  class=rvts10>ж)</span><span  class=rvts8> </span><span
+class=rvts10>BGP</span><span class=rvts8>;</span></p> 
+<p class=rvps156><span class=rvts8>з)&nbsp; POP 3.</span></p>
+<p     class=rvps157><span    class=rvts10>35.    Может    ли    быть
+использован        протокол        Telnet&nbsp;        для
+организации взаимодействия
+"процесс-процесс"?</span></p> 
+<p class=rvps158><span class=rvts8>а)&nbsp; да; </span></p>
+<p class=rvps159><span class=rvts8>б)&nbsp; нет.</span></p>
+<p class=rvps160><span class=rvts8><br></span></p>
+<p  class=rvps161><span class=rvts8>36. Позволяет ли протокол
+FTP  обеспечивать  передачу  данных  на третий
+компьютер?</span></p> 
+<p class=rvps162><span class=rvts8>а)&nbsp; да; </span></p>
+<p class=rvps163><span class=rvts8>б)&nbsp; нет.</span></p>
+<p class=rvps164><span class=rvts8><br></span></p>
+<ol style="text-indent: 47px; margin-left: 4px; list-style-position: inside;">
+<li    value=37    class=rvps165   style="margin-left:   0"><span   class=rvts8>
+Относятся   ли   команды  RNFR  и  RNTO  к  командам
+FTP-сервиса?</span></li> 
+</ol>
+<p class=rvps166><span class=rvts8>а)&nbsp; да; </span></p>
+<p class=rvps167><span class=rvts8>б)&nbsp; нет.</span></p>
+<p class=rvps168><span class=rvts8><br></span></p>
+<p       class=rvps169><span       class=rvts8>38. Реализует      ли
+протокол    </span><span    class=rvts13>TFTP</span><span   class=rvts8>
+</span><span     class=rvts14>порядковую     нумерацию     и
+</span><span       class=rvts15>подтверждение      принятых
+</span><span class=rvts16>пакетов?&nbsp; </span></p> 
+<p class=rvps170><span class=rvts8>а)&nbsp; да; </span></p>
+<p class=rvps171><span class=rvts8>б)&nbsp; нет.</span></p>
+<p class=rvps172><span class=rvts8><br></span></p>
+<p  class=rvps173><span class=rvts8>39. Для чего используется
+протокол SMTP?</span></p> 
+<p    class=rvps174><span    class=rvts8>а)&nbsp;    для    передачи
+почты;</span></p> 
+<p     class=rvps175><span     class=rvts8>б)&nbsp;     для     приема
+почты;</span></p> 
+<p   class=rvps176><span   class=rvts8>в)&nbsp;   для   передачи  и
+приема почты.</span></p> 
+<p class=rvps177><span class=rvts8><br></span></p>
+<p class=rvps178><span class=rvts8><br></span></p>
+<p    class=rvps179><span    class=rvts8>40.    Обеспечивает    ли
+прокол&nbsp;  MAP4  те  же  функции  что и протокол
+POP3?</span></p> 
+<p class=rvps180><span class=rvts8>а)&nbsp; да; </span></p>
+<p class=rvps181><span class=rvts8>б)&nbsp; нет.</span></p>
+<p><span class=rvts7><br></span></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="../test.htm">
+<img src="../../Практика/content/lb1/Menu.gif" width="73" height="22" class="style3"></a></p>
+</body></html>

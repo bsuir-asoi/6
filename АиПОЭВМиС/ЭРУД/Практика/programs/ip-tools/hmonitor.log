@@ -1,0 +1,56 @@
+[06.12.2001 17:22:06]	Sys	Monitor start
+[06.12.2001 17:22:08]	   	Host : www.google.com       	 status : Host is alive
+[06.12.2001 17:22:08]	   	Host : www.yahoo.com        	 status : Host is alive
+[06.12.2001 17:22:09]	   	Host : www.linux.org        	 status : Host is alive
+[06.12.2001 17:22:09]	   	Host : www.altavista.com    	 status : Host is alive
+[06.12.2001 17:22:36]	Sys	Monitor stop
+[16.11.2004 9:18:29]	Sys	Monitor start
+[16.11.2004 9:19:13]	   	Host : www.google.com       	 status : No answer
+[16.11.2004 9:19:13]	   	Host : www.linux.org        	 status : No answer
+[16.11.2004 9:19:33]	   	Host : www.yahoo.com        	 status : No answer
+[16.11.2004 9:19:48]	   	Host : www.altavista.com    	 status : No answer
+[16.11.2004 9:21:05]	Sys	Monitor stop
+[16.11.2004 9:25:00]	Sys	Monitor start
+[16.11.2004 9:25:11]	   	Host : www.linux.org        	 status : No answer
+[16.11.2004 9:25:11]	   	Host : www.google.com       	 status : No answer
+[16.11.2004 9:25:14]	Sys	Monitor stop
+[16.11.2004 9:25:28]	Sys	Monitor start
+[16.11.2004 9:25:30]	Sys	Monitor stop
+[16.11.2004 10:22:27]	Sys	Monitor start
+[16.11.2004 10:22:29]	Sys	Monitor stop
+[22.11.2004 13:59:23]	Sys	Monitor start
+[22.11.2004 13:59:35]	   	Host : www.google.com       	 status : No answer
+[22.11.2004 13:59:35]	   	Host : www.linux.org        	 status : No answer
+[22.11.2004 14:00:06]	Sys	Monitor stop
+[22.11.2004 16:48:59]	Sys	Monitor start
+[22.11.2004 16:49:10]	   	Host : www.linux.org        	 status : No answer
+[22.11.2004 16:49:10]	   	Host : www.google.com       	 status : No answer
+[22.11.2004 16:49:31]	   	Host : www.yahoo.com        	 status : No answer
+[22.11.2004 16:49:46]	   	Host : www.altavista.com    	 status : No answer
+[23.11.2004 9:03:23]	Sys	Monitor start
+[23.11.2004 9:03:35]	   	Host : www.linux.org        	 status : No answer
+[23.11.2004 9:03:35]	   	Host : www.google.com       	 status : No answer
+[23.11.2004 9:03:54]	   	Host : www.yahoo.com        	 status : No answer
+[23.11.2004 9:04:10]	   	Host : www.altavista.com    	 status : No answer
+[23.11.2004 9:33:33]	Sys	Monitor stop
+[29.11.2004 14:41:53]	Sys	Monitor start
+[29.11.2004 14:41:57]	Sys	Monitor stop
+[30.11.2004 8:48:07]	Sys	Monitor start
+[30.11.2004 8:48:10]	Sys	Monitor stop
+[30.11.2004 9:11:19]	Sys	Monitor start
+[30.11.2004 9:11:31]	   	Host : www.linux.org        	 status : No answer
+[30.11.2004 9:11:31]	   	Host : www.google.com       	 status : No answer
+[30.11.2004 9:11:50]	   	Host : www.yahoo.com        	 status : No answer
+[30.11.2004 9:14:12]	Sys	Monitor stop
+[30.11.2004 9:14:24]	Sys	Monitor start
+[30.11.2004 9:18:58]	Sys	Monitor stop
+[14.07.2005 0:07:00]	Sys	Monitor start
+[14.07.2005 0:07:03]	Sys	Monitor stop
+[04.09.2005 12:31:36]	Sys	Monitor start
+[04.09.2005 13:10:26]	Sys	Monitor stop
+[26.11.2011 23:31:46]	Sys	Monitor start
+[26.11.2011 23:31:48]	Sys	Monitor stop
+[27.11.2011 12:25:16]	Sys	Monitor start
+[27.11.2011 12:25:19]	Sys	Monitor stop
+[27.11.2011 12:51:43]	Sys	Monitor start
+[27.11.2011 12:52:25]	Sys	Monitor stop

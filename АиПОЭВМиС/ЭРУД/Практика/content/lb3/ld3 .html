@@ -1,0 +1,1762 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>ld3 </title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+body {
+  margin: 5px 5px 5px 5px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Normal text */
+{
+ font-size: 10pt;
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1 /* Heading */
+{
+ font-weight: bold;
+ color: #0000ff;
+}
+span.rvts2 /* Subheading */
+{
+ font-weight: bold;
+ color: #000080;
+}
+span.rvts3 /* Keywords */
+{
+ font-style: italic;
+ color: #800000;
+}
+a.rvts4, span.rvts4 /* Jump 1 */
+{
+ color: #008000;
+ text-decoration: underline;
+}
+a.rvts5, span.rvts5 /* Jump 2 */
+{
+ color: #008000;
+ text-decoration: underline;
+}
+span.rvts6
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts7
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts8
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts9
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts10
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts11
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #0000ff;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1 /* Centered */
+{
+ text-align: center;
+}
+.rvps2
+{
+ text-align: justify;
+ text-indent: 129px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 4px;
+}
+.rvps3
+{
+ text-align: justify;
+ text-indent: 72px;
+ padding: 0px 0px 0px 0px;
+ margin: 8px 0px 0px 4px;
+}
+.rvps4
+{
+ text-align: justify;
+ text-indent: 157px;
+ padding: 0px 0px 0px 0px;
+ margin: 16px 0px 8px 4px;
+}
+.rvps5
+{
+ text-align: justify;
+ text-indent: 38px;
+ padding: 0px 0px 0px 0px;
+ margin: 8px 0px 0px 4px;
+}
+.rvps6
+{
+ text-align: justify;
+ text-indent: 147px;
+ padding: 0px 0px 0px 0px;
+ margin: 16px 0px 8px 4px;
+}
+.rvps7
+{
+ text-align: justify;
+ text-indent: 38px;
+ padding: 0px 0px 0px 0px;
+ margin: 16px 0px 0px 4px;
+}
+.rvps8
+{
+ text-align: justify;
+ text-indent: 47px;
+ margin: 8px 0px 0px 0px;
+}
+.rvps9
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 8px 0px 0px 4px;
+}
+.rvps10
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 0px 0px 0px 4px;
+}
+.rvps11
+{
+ text-align: justify;
+ text-indent: 38px;
+ padding: 0px 0px 0px 0px;
+ margin: 8px 0px 0px 4px;
+}
+.rvps12
+{
+ text-align: justify;
+ text-indent: 38px;
+ padding: 0px 0px 0px 0px;
+ margin: 8px 0px 0px 4px;
+}
+.rvps13
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 16px 0px 8px 4px;
+}
+.rvps14
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 0px 0px 8px 4px;
+}
+.rvps15
+{
+ margin: 8px 0px 8px 4px;
+}
+.rvps16
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps17
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps18
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps19
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps20
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps21
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps22
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps23
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps24
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps25
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps26
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps27
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps28
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps29
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps30
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps31
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps32
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps33
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps34
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps35
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps36
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps37
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps38
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps39
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps40
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps41
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps42
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps43
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps44
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps45
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps46
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps47
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps48
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps49
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps50
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps51
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps52
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps53
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps54
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps55
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps56
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps57
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps58
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps59
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps60
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps61
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps62
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps63
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps64
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps65
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps66
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps67
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps68
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps69
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps70
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps71
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps72
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps73
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps74
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps75
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps76
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps77
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps78
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps79
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps80
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps81
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps82
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps83
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps84
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps85
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps86
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps87
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps88
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps89
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps90
+{
+ margin: 0px 0px 0px 4px;
+}
+.rvps91
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 8px 0px 0px 4px;
+}
+.rvps92
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 8px 0px 0px 4px;
+}
+.rvps93
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 16px 0px 8px 4px;
+}
+.rvps94
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 8px 0px 8px 4px;
+}
+.rvps95
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 8px 0px 0px 4px;
+}
+.rvps96
+{
+ text-indent: 38px;
+ margin: 16px 0px 8px 4px;
+}
+.rvps97
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 0px 0px 16px 4px;
+}
+.rvps98
+{
+ text-align: justify;
+ text-indent: 28px;
+}
+.rvps99
+{
+ text-align: justify;
+ text-indent: 28px;
+}
+.rvps100
+{
+ text-align: justify;
+ text-indent: 66px;
+ margin: 0px 0px 16px 0px;
+}
+.rvps101
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 0px 0px 16px 4px;
+}
+.rvps102
+{
+ text-align: justify;
+ text-indent: 91px;
+ margin: 0px 0px 0px 4px;
+}
+.rvps103
+{
+ text-align: justify;
+ text-indent: 66px;
+ margin: 24px 0px 8px 0px;
+}
+.rvps104
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 8px 0px 0px 4px;
+}
+.rvps105
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 0px 0px 0px 4px;
+}
+.rvps106
+{
+ text-align: justify;
+ text-indent: 38px;
+ line-height: 0.91;
+ margin: 0px 0px 0px 4px;
+}
+.rvps107
+{
+ text-indent: 38px;
+ margin: 16px 0px 8px 4px;
+}
+.rvps108
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 0px 0px 0px 4px;
+}
+.rvps109
+{
+ text-align: justify;
+ text-indent: 38px;
+ line-height: 0.91;
+ margin: 0px 0px 0px 4px;
+}
+.rvps110
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 0px 0px 0px 4px;
+}
+.rvps111
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 0px 0px 0px 4px;
+}
+.rvps112
+{
+ text-align: justify;
+ text-indent: 66px;
+ margin: 16px 0px 8px 0px;
+}
+.rvps113
+{
+ text-align: justify;
+ text-indent: 38px;
+ line-height: 0.91;
+ margin: 0px 0px 0px 4px;
+}
+.rvps114
+{
+ text-indent: 38px;
+ margin: 16px 0px 8px 4px;
+}
+.rvps115
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 0px 0px 0px 4px;
+}
+.rvps116
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 0px 0px 0px 4px;
+}
+.rvps117
+{
+ text-align: justify;
+ text-indent: 38px;
+ line-height: 0.92;
+ margin: 0px 0px 0px 4px;
+}
+.rvps118
+{
+ text-align: justify;
+ text-indent: 38px;
+ line-height: 0.91;
+ margin: 0px 0px 0px 4px;
+}
+.rvps119
+{
+ text-align: justify;
+ text-indent: 38px;
+ line-height: 0.91;
+ margin: 0px 0px 0px 4px;
+}
+.rvps120
+{
+ text-align: justify;
+ text-indent: 38px;
+ line-height: 0.91;
+ margin: 0px 0px 0px 4px;
+}
+.rvps121
+{
+ text-align: justify;
+ text-indent: 38px;
+ line-height: 0.92;
+ margin: 16px 0px 16px 4px;
+}
+.rvps122
+{
+ text-align: justify;
+ text-indent: 38px;
+ line-height: 0.91;
+ margin: 0px 0px 0px 4px;
+}
+.rvps123
+{
+ text-align: justify;
+ text-indent: 38px;
+ line-height: 0.91;
+ margin: 0px 0px 0px 4px;
+}
+.rvps124
+{
+ text-align: justify;
+ text-indent: 38px;
+ line-height: 0.92;
+ margin: 16px 0px 8px 4px;
+}
+.rvps125
+{
+ text-align: justify;
+ text-indent: 38px;
+ line-height: 0.91;
+ margin: 0px 0px 0px 4px;
+}
+.rvps126
+{
+ text-align: justify;
+ text-indent: 38px;
+ line-height: 0.91;
+ margin: 0px 0px 0px 4px;
+}
+.rvps127
+{
+ text-indent: 129px;
+ margin: 16px 0px 8px 4px;
+}
+.rvps128
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 0px 0px 0px 4px;
+}
+.rvps129
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 0px 0px 0px 4px;
+}
+.rvps130
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 0px 0px 0px 4px;
+}
+.rvps131
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 0px 0px 0px 4px;
+}
+.rvps132
+{
+ text-align: justify;
+ text-indent: 47px;
+}
+.rvps133
+{
+ text-align: justify;
+ text-indent: 47px;
+}
+.rvps134
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 0px 0px 0px 4px;
+}
+.rvps135
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 0px 0px 0px 4px;
+}
+.rvps136
+{
+ text-indent: 195px;
+ margin: 16px 0px 8px 4px;
+}
+.rvps137
+{
+ text-indent: 38px;
+ margin: 0px 0px 0px 4px;
+}
+.rvps138
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 0px 0px 0px 4px;
+}
+.rvps139
+{
+ text-indent: 38px;
+ margin: 0px 0px 0px 4px;
+}
+.rvps140
+{
+ text-indent: 176px;
+ margin: 16px 0px 8px 4px;
+}
+.rvps141
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 0px 0px 0px 4px;
+}
+.rvps142
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 0px 0px 0px 4px;
+}
+.rvps143
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 0px 0px 0px 4px;
+}
+.rvps144
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 0px 0px 0px 4px;
+}
+.rvps145
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 0px 0px 0px 4px;
+}
+.rvps146
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 0px 0px 0px 4px;
+}
+.rvps147
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 0px 0px 0px 4px;
+}
+.rvps148
+{
+ text-align: justify;
+ text-indent: 204px;
+ margin: 16px 0px 8px 4px;
+}
+.rvps149
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 8px 0px 0px 4px;
+}
+.rvps150
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 8px 0px 0px 4px;
+}
+.rvps151
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 12px 0px 0px 4px;
+}
+.rvps152
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 12px 0px 0px 4px;
+}
+.rvps153
+{
+ text-align: justify;
+ text-indent: 38px;
+ margin: 12px 0px 0px 4px;
+}
+.style1 {
+	font-size: medium;
+	font-family: "Times New Roman", Times, serif;
+}
+.style3 {
+	border-width: 0px;
+}
+--></style>
+</head>
+<body>
+<h1                      class=rvps2><a href="../../practice.htm">
+<img src="../lb1/Menu.gif" width="73" height="22" class="style3"></a></h1>
+<h1                      class=rvps2><span                     class=rvts0>
+<span
+class=rvts6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></h1>
+<h1                      class=rvps2><span                     class=rvts0>
+<span
+class=rvts6>&nbsp;Лабораторная&nbsp;
+работа № 3</span></span></h1> 
+<h1      class=rvps3><span      class=rvts0><span     class=rvts7>Консоль
+управления Microsoft WINDOWS 2K </span></span></h1> 
+<h1                      class=rvps4><span                     class=rvts0><span
+class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        1.        Цель
+работы</span></span></h1> 
+<h1   class=rvps5><span  class=rvts0><span  class=rvts6>Практическое
+освоение      технологии      создания      новой
+консоли      управления      Microsoft     Windows&nbsp;     2K
+</span></span></h1> 
+<h1   class=rvps6><span   class=rvts0><span   class=rvts7>&nbsp;  2.  Общие
+сведения</span></span></h1> 
+<h1      class=rvps7><span      class=rvts0><span      class=rvts7>&nbsp;     2.
+Понятие&nbsp;    консоли   управления</span></span><span
+class=rvts0><span     class=rvts6>&nbsp;</span></span><span    class=rvts0><span
+class=rvts7>      MMC</span></span><span      class=rvts0><span     class=rvts6>
+</span></span></h1> 
+<p     class=rvps8><span    class=rvts6>Начиная    с    Windows    2000,
+технология   и   средства  администрирования
+Windows            2К</span><span           class=rvts7>           </span><span
+class=rvts6>претерпели   кардинальные  изменения.
+В  Windows 2000 появилась единая среда управления
+</span><span   class=rvts7>MMC</span><span  class=rvts6>  (Microsoft  Management
+Console).  MMC  представляет  собой  общую  консоль
+управления,     которая    предназначена    для
+запуска               программных               модулей
+администрирования,    конфигурирования   или
+мониторинга  локальных компьютеров и сети в
+целом.</span></p> 
+<p   class=rvps9><span   class=rvts6>Сама   по   себе   консоль
+управления      не      обеспечивает      никаких
+управляющих     функций,    а    лишь    является
+средой  для  оснасток (snap-ins). Оснастка </span><span
+class=rvts8>−</span><span     class=rvts6>    это    управляющий
+компонент.     Одна    оснастка    обеспечивает
+единицу     управления,    а    набор    оснасток
+составляет         управляющий        инструмент.
+Оснастки        позволяют        администраторам
+расширять     и     настраивать    консоль    для
+решения своих задач.</span></p> 
+<p                class=rvps10><span               class=rvts6>Оснастка,
+представляющая  собой  минимальную  единицу
+управления,       может       вызывать       другие
+поддерживаемые       в       системе      элементы
+управления     и    динамические    библиотеки.
+Оснастки   могут   работать   в  двух  режимах:
+самостоятельном        режиме        и        режиме
+расширения.  В первом&nbsp; случае они, обладая
+полной  функциональностью,  необходимой для
+выполнения    какой-либо    задачи,   не   могут
+использовать    других   оснасток.   В   режиме
+расширения          оснастки          обеспечивают
+функциональность    только    при   вызове   их
+родительской   оснасткой.   Многие   оснастки
+могут работать в обоих режимах.</span></p> 
+<h1    class=rvps11><span   class=rvts0><span   class=rvts6>Консоль   MMC
+обеспечивает     интеграцию    и    унификацию,
+гибкость   в  выборе  инструментов,  а  так  же
+возможность    индивидуальной   настройки   и
+передачи     полномочий.     Эти     достоинства
+позволяют  существенно  сократить  издержки
+на          администрирование.         Возможность
+индивидуальной        настройки,       позволяет
+администраторам         создавать         консоли
+управления,              включающие             только
+необходимые&nbsp;      инструменты.     Настройка
+консоли         позволяет         администраторам
+передавать  определенную  часть  полномочий
+менее   опытным  сотрудникам.  С  помощью  ММС
+можно     создать    консоль,    которая    будет
+содержать       объекты,      необходимые      для
+выполнения   только   определенных   функций.
+Ниже   технология   создания   новой   консоли
+управления   Microsoft   Windows  рассматривается  на
+примере  Windows&nbsp; 2000 Server. Аналогичным образом
+ММС       создаются       и       используются       в
+семействе&nbsp;&nbsp;  Windows  2003,  Windows  XP,  Windows  7  и  в
+семействах Windows 2008 и Windows 2012. </span></span></h1> 
+<p   class=rvps13><span   class=rvts7>2.2.   Основные   оснастки
+Windows 2000</span></p> 
+<p   class=rvps14><span   class=rvts6>В   табл.   1  перечислены
+основные  оснастки&nbsp; Windows 2000 Professional; в табл.
+2          </span><span         class=rvts8>−</span><span         class=rvts6>
+дополнительные     оснастки     Windows    2000    Server.
+Оснастки,   включенные   в   пользовательский
+интерфейс       при      инсталляции      системы,
+отмечены        звездочкой        (*).       Оснастки,
+работающие   только   на  контроллере  домена
+под    управлением    Windows    2000   Server,   отмечены
+буквой "D".</span></p> 
+<p    class=rvps15><span    class=rvts6>Таблица    1.   Оснастки,
+имеющиеся в Windows 2000 Professional</span></p> 
+<div><table       width=652      border=1      cellpadding=1      cellspacing=-1
+style="border-width: 0px; border-collapse: collapse;"> 
+<tr valign=top>
+<td  width=213  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:                    solid;"><p                   class=rvps16><span
+class=rvts9>Оснастка</span></p> 
+</td>
+<td  width=431  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:                    solid;"><p                   class=rvps17><span
+class=rvts9>Назначение</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=213  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:   solid;" class="style1"><p   class=rvps18>
+<span   class=rvts10 style="font-size: medium">Анализ   и
+настройка    безопасности   (Security   Configuration   and
+Analysis)</span></p> 
+</td>
+<td  width=431  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;"><p  class=rvps19>
+<span  class=rvts10 style="font-size: medium">Служит  для
+управления      безопасностью      системы      с
+помощью шаблонов безопасности</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=213  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:   solid;" class="style1"><p   class=rvps20>
+<span  class=rvts10 style="font-size: medium">Групповая
+политика (Group Policy)</span></p> 
+</td>
+<td  width=431  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;"><p  class=rvps21>
+<span  class=rvts10 style="font-size: medium">Служит  для
+назначения          сценариев         регистрации,
+групповых     политик     для     компьютера     и
+пользователей  некоторого  компьютера сети;
+позволяет      просматривать      и      изменять
+политику   безопасности,  политику  аудита  и
+права пользователей</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=213  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:                    solid;" class="style1"><p                   class=rvps22>
+<span
+class=rvts10 style="font-size: medium">Дефрагментация            диска            (Disk
+Defragmented)</span></p> 
+</td>
+<td  width=431  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;"><p  class=rvps23>
+<span  class=rvts10 style="font-size: medium">Служит  для
+анализа       и       дефрагментации      дисковых
+томов</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=213  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:   solid;" class="style1"><p   class=rvps24>
+<span  class=rvts10 style="font-size: medium">Диспетчер
+устройств (Device Manager)</span></p> 
+</td>
+<td  width=431  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:    solid;"><p   class=rvps25>
+<span   class=rvts10 style="font-size: medium">Содержит
+список    всех    устройств,    подключенных   к
+компьютеру,            и            позволяет           их
+конфигурировать</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=213  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:   solid;" class="style1"><p   class=rvps26>
+<span  class=rvts10 style="font-size: medium">Локальные
+пользователи и группы (Local Users and Groups)</span></p> 
+</td>
+<td  width=431  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;"><p  class=rvps27>
+<span  class=rvts10 style="font-size: medium">Служит  для
+управления   локальными   учетными  записями
+пользователей и групп</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=213  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;" class="style1"><p  class=rvps28>
+<span class=rvts10 style="font-size: medium">Общие папки
+(Shared Folders)</span></p> 
+</td>
+<td  width=431  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;"><p  class=rvps29>
+<span  class=rvts10 style="font-size: medium">Отображает
+совместно     используемые    папки,    текущие
+сеансы и открытые файлы</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=213  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;" class="style1"><p  class=rvps30>
+<span  class=rvts10 style="font-size: medium">Оповещения
+и  журналы  производительности  (Performance  Logs and
+Alerts)</span></p> 
+</td>
+<td  width=431  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:                    solid;"><p                   class=rvps31>
+<span
+class=rvts10 style="font-size: medium">Конфигурирует     журналы    данных    о
+работе системы и службу оповещений</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=213  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:      solid;" class="style1"><p     class=rvps32>
+<span     class=rvts10 style="font-size: medium">Папка
+(Folder)</span></p> 
+</td>
+<td  width=431  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;"><p  class=rvps33>
+<span  class=rvts10 style="font-size: medium">Служит  для
+добавления новой папки в дерево</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=213  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:    solid;" class="style1"><p   class=rvps34>
+<span   class=rvts10 style="font-size: medium">Просмотр
+событий (Event Viewer)*</span></p> 
+</td>
+<td  width=431  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;"><p  class=rvps35>
+<span  class=rvts10 style="font-size: medium">Служит  для
+просмотра  и управления системным журналом,
+журналами      безопасности     и     приложений
+</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=213  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;" class="style1"><p  class=rvps36>
+<span  class=rvts10 style="font-size: medium">Сведения  о
+системе (System Information)</span></p> 
+</td>
+<td  width=431  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;"><p  class=rvps37>
+<span  class=rvts10 style="font-size: medium">Отображает
+информацию о системе</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=213  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;" class="style1"><p class=rvps38>
+<span class=rvts10 style="font-size: medium">Сертификаты
+(Certificates)</span></p> 
+</td>
+<td  width=431  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;"><p  class=rvps39>
+<span  class=rvts10 style="font-size: medium">Служит  для
+управления сертификатами</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=213  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:   solid;" class="style1"><p   class=rvps40>
+<span  class=rvts10 style="font-size: medium">Системный
+монитор (Performance)*</span></p> 
+</td>
+<td  width=431  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:                    solid;"><p                   class=rvps41>
+<span
+class=rvts10 style="font-size: medium">Используется  для  сбора  и просмотра
+в  реальном времени данных, характеризующих
+работу    памяти,    дисков,   процессора   и&nbsp;
+т.д.</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=213  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:     solid;" class="style1"><p     class=rvps42>
+<span    class=rvts10 style="font-size: medium">Служба
+индексирования (Indexing Service)</span></p> 
+</td>
+<td  width=431  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;"><p  class=rvps43>
+<span  class=rvts10 style="font-size: medium">Служит  для
+индексирования  документов различных типов
+с целью ускорения их поиска</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=213  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:     solid;" class="style1"><p     class=rvps44>
+<span    class=rvts10 style="font-size: medium">Служба
+компонентов (Component Services)*</span></p> 
+</td>
+<td  width=431  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:                    solid;"><p                   class=rvps45>
+<span
+class=rvts10 style="font-size: medium">Конфигурирует  и  управляет службами
+компонентов СОМ+</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=213  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:     solid;" class="style1"><p     class=rvps46>
+<span    class=rvts10 style="font-size: medium">Службы
+(Services)*</span></p> 
+</td>
+<td  width=431  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:   solid;"><p  class=rvps47>
+<span  class=rvts10 style="font-size: medium">Запускает,
+останавливает     и     конфигурирует    службы
+(сервисы) Windows</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=213  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:   solid;" class="style1"><p   class=rvps48>
+<span  class=rvts10 style="font-size: medium">Ссылка  на
+ресурс Web (Link to Web Address)</span></p> 
+</td>
+<td  width=431  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;"><p  class=rvps49>
+<span  class=rvts10 style="font-size: medium">Служит  для
+подключения&nbsp; Web -страниц (html, asp, stml)</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=213  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;" class="style1"><p  class=rvps50>
+<span  class=rvts10 style="font-size: medium">Управление
+дисками (Disk Management)</span></p> 
+</td>
+<td  width=431  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;"><p  class=rvps51>
+<span  class=rvts10 style="font-size: medium">Служит  для
+управления     дисками    и    защитой    данных,
+разбиения   дисков   на   логические  тома,&nbsp;
+управления            совместным           доступом,
+форматирования и т. д.</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=213  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;" class="style1"><p  class=rvps52>
+<span  class=rvts10 style="font-size: medium">Управление
+компьютером (Computer Management)*</span></p> 
+</td>
+<td  width=431  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:                    solid;"><p                   class=rvps53>
+<span
+class=rvts10 style="font-size: medium">Предоставляет функции
+администрирования     системы.    Содержит    в
+своем  составе ряд изолированных оснасток и
+оснасток расширения</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=213  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:                    solid;" class="style1"><p                   class=rvps54>
+<span
+class=rvts9 style="font-size: medium">Оснастка</span></p> 
+</td>
+<td  width=431  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:                    solid;"><p                   class=rvps55>
+<span
+class=rvts9 style="font-size: medium">Назначение</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=213  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;" class="style1"><p  class=rvps56>
+<span  class=rvts10 style="font-size: medium">Управление
+политикой    безопасности    IP    (IP    Security   Policy
+Management)</span></p> 
+</td>
+<td  width=431  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;"><p  class=rvps57>
+<span  class=rvts10 style="font-size: medium">Служит  для
+управления  политиками  IPSec  для безопасного
+соединения с другими компьютерами</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=213  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;" class="style1"><p  class=rvps58>
+<span  class=rvts10 style="font-size: medium">Управление
+службой факсов (Fax Service Management)</span></p> 
+</td>
+<td  width=431  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;"><p  class=rvps59>
+<span  class=rvts10 style="font-size: medium">Служит  для
+управления       службой       и      устройствами
+факсимильной связи</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=213  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;" class="style1"><p  class=rvps60>
+<span  class=rvts10 style="font-size: medium">Управление
+съемными         носителями         (Removable         Storage
+Management)</span></p> 
+</td>
+<td  width=431  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;"><p  class=rvps61>
+<span  class=rvts10 style="font-size: medium">Служит  для
+управления            сменными            носителями
+информации</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=213  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;" class="style1"><p class=rvps62>
+<span class=rvts10 style="font-size: medium">Управляющий
+элемент (WMI Control)</span></p> 
+</td>
+<td  width=431  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;"><p  class=rvps63>
+<span  class=rvts10 style="font-size: medium">Служит  для
+конфигурирования      средств      Windows     Management
+Instrumentation и управления ими</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=213  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:    solid;" class="style1"><p    class=rvps64>
+<span    class=rvts10 style="font-size: medium">Шаблоны
+безопасности (Security Templates)</span></p> 
+</td>
+<td  width=431  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:                    solid;"><p                   class=rvps65>
+<span
+class=rvts10 style="font-size: medium">Обеспечивает возможность
+редактирования файлов-шаблонов
+безопасности</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=213  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;" class="style1"><p class=rvps66>
+<span class=rvts10 style="font-size: medium">Элемент ActiveX
+(ActiveX Control)</span></p> 
+</td>
+<td  width=431  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;"><p class=rvps67>
+<span class=rvts10 style="font-size: medium">Подключение
+к    дереву    консоли    различных    элементов
+управления ActiveX</span></p> 
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps68>&nbsp;</p>
+<p class=rvps69><span class=rvts6><br></span></p>
+<p           class=rvps70><span           class=rvts6>Таблица          2.
+Дополнительные оснастки Windows 2000 Server </span></p> 
+<div><table       width=614      border=1      cellpadding=1      cellspacing=-1
+style="border-width: 0px; border-collapse: collapse;"> 
+<tr valign=top>
+<td  width=214  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:                    solid;" class="style1"><p                   class=rvps71>
+<span
+class=rvts10 style="font-size: medium">Оснастка</span></p> 
+</td>
+<td  width=392  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:                    solid;"><p                   class=rvps72>
+<span
+class=rvts10 style="font-size: medium">Назначение</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=214  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;" class="style1"><p  class=rvps73>
+<span  class=rvts10 style="font-size: medium">*Active  Directory -
+домены   и   доверие   (Active   Directory   Domains  and  Trusts)
+(D)</span></p> 
+</td>
+<td  width=392  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;"><p  class=rvps74>
+<span  class=rvts10 style="font-size: medium">Служит  для
+управления     доменами     и    доверительными
+отношениями</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=214  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;" class="style1"><p  class=rvps75>
+<span  class=rvts10 style="font-size: medium">*Active  Directory -
+пользователи  и  компьютеры  (Active  Directory Users and
+Computers) (D)</span></p> 
+</td>
+<td  width=392  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:   solid;"><p   class=rvps76>
+<span  class=rvts10 style="font-size: medium">Управляет
+пользователями, группами,
+организационными     единицами     и    другими
+объектами AD</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=214  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;" class="style1"><p  class=rvps77>
+<span  class=rvts10 style="font-size: medium">*Active  Directory -
+сайты    и    службы   (Active   Directory   Sites   and   Services)
+(D)</span></p> 
+</td>
+<td  width=392  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;"><p  class=rvps78>
+<span  class=rvts10 style="font-size: medium">Определяет
+топологию     и    расписание    репликации    AD.
+Обеспечивает              изменение              служб
+корпоративного уровня Windows 2000</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=214  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:                    solid;" class="style1"><p                   class=rvps79>
+<span
+class=rvts10 style="font-size: medium">Маршрутизация   и   удаленный   доступ
+(Routing and Remote Access)</span></p> 
+</td>
+<td  width=392  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;"><p  class=rvps80>
+<span  class=rvts10 style="font-size: medium">Служит  для
+управления    маршрутизацией    и    удаленным
+доступом</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=214  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:    solid;" class="style1"><p   class=rvps81>
+<span   class=rvts10 style="font-size: medium">Политика
+безопасности домена (Domain Security Policy) (D)</span></p> 
+</td>
+<td  width=392  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;"><p  class=rvps82>
+<span  class=rvts10 style="font-size: medium">Служит  для
+управления   политиками   для   всего  домена.
+Фактически,   представляет   собой   оснастку
+Групповая  политика,  настроенную  на работу
+с конкретным доменом</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=214  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:    solid;" class="style1"><p   class=rvps83>
+<span   class=rvts10 style="font-size: medium">Политика
+безопасности  контроллера домена (Domain Controller
+Security Policy) (D)</span></p> 
+</td>
+<td  width=392  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;"><p  class=rvps84>
+<span  class=rvts10 style="font-size: medium">Служит  для
+управления    политиками    безопасности    на
+отдельных  контроллерах домена. Фактически,
+представляет    собой    оснастку    Групповая
+политика,      настроенную      на      работу     с
+конкретным контроллером домена</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=214  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:                    solid;" class="style1"><p                   class=rvps85>
+<span
+class=rvts10 style="font-size: medium">Распределенная  файловая  система  DPS
+(Distributed file system)</span></p> 
+</td>
+<td  width=392  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:   solid;"><p   class=rvps86>
+<span  class=rvts10 style="font-size: medium">Создает  и
+управляет       распределенными       файловыми
+системами,         объединяющими        совместно
+используемые        папки        на        различных
+компьютерах</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=214  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:   solid;" class="style1"><p   class=rvps87>
+<span  class=rvts10 style="font-size: medium">Телефония
+(Telephony)</span></p> 
+</td>
+<td  width=392  valign=top  style="border-width  :  1px;  border-color: #000000;
+border-style:  solid;"><p  class=rvps88>
+<span  class=rvts10 style="font-size: medium">Служит  для
+конфигурирования служб телефонии</span></p> 
+</td>
+</tr>
+</table>
+</div>
+<p   class=rvps91><span   class=rvts6>Кроме  перечисленных  в
+табл.1   и   табл.2   оснасток,  в  системе  после
+инсталляции  дополнительных  служб (сетевых
+служб,   Интернет-служб,   служб   терминалов),
+появляется     множество    других    оснасток.
+Такие       оснастки       использующихся      для
+администрирования этих служб. </span></p> 
+<p  class=rvps93><span  class=rvts7>2.3.  Технологии  создания
+новой           консоли          Windows&nbsp;          </span><span
+class=rvts6>2К</span></p> 
+<p  class=rvps94><span  class=rvts7>2.3.1.  Процедуры  создания
+новой консоли</span></p> 
+<p  class=rvps95><span  class=rvts6>Создание  новой  консоли
+управления   включает  следующие  процедуры:
+создание    файла    консоли,   индивидуальную
+настройку  окон  оснасток,  создание панелей
+задач  и  установку  опций  консоли.  Ниже,  на
+примере     добавления     к     новой     консоли
+оснастки          </span><span          class=rvts7>Управление
+компьютером</span><span          class=rvts6>,         описаны
+названные процедуры. </span></p> 
+<p  class=rvps96><span class=rvts7>2.3.2. Создание файла новой
+консоли </span></p> 
+<p  class=rvps97><span class=rvts6>В меню </span><span class=rvts7>Пуск
+(Start)</span><span   class=rvts6>   выберите   пункт  </span><span
+class=rvts7>Выполнить  (Run)</span><span  class=rvts6>,  введите
+</span><span    class=rvts7>mmc</span><span   class=rvts6>   и   нажмите
+кнопку     </span><span     class=rvts7>ОК.</span><span     class=rvts6>
+Откроется      окно     </span><span     class=rvts7>Консоль
+1</span><span  class=rvts6>  (см.  рис.1)  с пустой консолью
+(или        административным       инструментом).
+</span></p> 
+<p    class=rvps98><img    width=589   height=365   alt=""   hspace=1   vspace=1
+src="img1.png"></p> 
+<p class=rvps99><span class=rvts6><br></span></p>
+<p    class=rvps100><span   class=rvts6>Рис.   1.   Окно   консоль
+MMC.</span></p> 
+<p       class=rvps101><span      class=rvts6>В      меню      </span><span
+class=rvts7>Консоль  (Console)</span><span  class=rvts6> выберите
+пункт        </span><span       class=rvts7>Добавить/удалить
+оснастку       (Add/Remove       Snap-in)</span><span      class=rvts6>.
+Откроется                     окно                     </span><span
+class=rvts7>Добавить/Удалить оснастку.</span><span
+class=rvts6>          Нажмите          кнопку          </span><span
+class=rvts7>Добавить  (Add)</span><span  class=rvts6>. На экране
+появится      окно     </span><span     class=rvts7>Добавить
+изолированную        оснастку        (Add       Stand-alone
+Snap-in)</span><span          class=rvts6>          со          списком
+изолированных      оснасток,      имеющихся     в
+системе       (см.       рис.2).      В      этом      окне
+перечисляются    изолированные   оснастки   и
+оснастки       расширения,      которые      можно
+добавить      в      консоль     Оснастки     можно
+добавлять  к  корню консоли управления или к
+уже    имеющимся    изолированным    оснасткам
+(другим узлам дерева). </span></p> 
+<p  class=rvps102><span  class=rvts6>  </span><img  width=383  height=367 alt=""
+hspace=1 vspace=1 src="img2.png"></p> 
+<p   class=rvps103><span   class=rvts6>Рис.  2.  Окно  «Добавить
+изолированную оснастку».</span></p> 
+<p     class=rvps104><span     class=rvts6>Выполните     двойной
+щелчок  на  пункте  </span><span  class=rvts7>Управление
+компьютером.  </span><span  class=rvts6>Появится  окно с
+конфигурационными     опциями     для    данной
+оснастки.     Оставьте&nbsp;    переключатель    в
+положении          </span><span          class=rvts7>локальным
+компьютером  (Local  computer</span><span  class=rvts6>).  Затем
+нажмите      кнопку      </span><span      class=rvts7>Готово
+(Finish</span><span     class=rvts6>)     и,     далее,     --&nbsp;&nbsp;
+кнопку&nbsp;      </span><span      class=rvts7>Закрыть</span><span
+class=rvts6>     в     окне    </span><span    class=rvts7>Добавить
+изолированную оснастку</span><span
+class=rvts6>.</span></p> 
+<p       class=rvps105><span      class=rvts6>В      окне      </span><span
+class=rvts7>Добавить/Удалить оснастку</span><span
+class=rvts6>&nbsp;    перейдите    на   вкладку   </span><span
+class=rvts7>Расширения   (Extensions)</span><span  class=rvts6>.  На
+этой    вкладке    приведен   список   оснасток
+расширения,  которые  поставляются  вместе с
+выбранными      изолированными     оснастками.
+Если    вы   не   собираетесь   подключать   все
+оснастки     расширения,     сбросьте     флажок
+</span><span  class=rvts7>Добавить  все расширения (Add all
+extensions),</span><span     class=rvts6>     установленный    по
+умолчанию,    и    снимите    флажки    с   лишних
+оснасток.   По  окончании  процедуры  нажмите
+кнопку     </span><span     class=rvts7>ОК.</span><span     class=rvts6>
+Закройте   окно  добавления  оснасток,  нажав
+кнопку   ОК.   Теперь   окно  консоли  содержит
+оснастку          </span><span          class=rvts7>Управление
+компьютером </span><span class=rvts6>(см. рис.3). </span></p> 
+<p      class=rvps106><span      class=rvts6>Для      того     чтобы
+сохранить    созданный   инструмент,   в   меню
+Консоль          выберите         пункт         </span><span
+class=rvts7>Сохранить  как  (Save  As)</span><span  class=rvts6>  и
+укажите  имя  файла  и  папку, в которой будет
+сохранен файл консоли.</span></p> 
+<p     class=rvps107><span    class=rvts7>2.3.3.    Индивидуальная
+настройка окон оснасток </span></p> 
+<p      class=rvps108><span      class=rvts6>После     добавления
+оснасток   можно  развернуть  окна  оснасток,
+чтобы   облегчить  работу  с  ними.  Для  этого
+выполните следующие действия:</span></p> 
+<p  class=rvps109><span  class=rvts6>В  левом  подокне (в окне
+структуры)   только   что   созданной  консоли
+щелкните    правой    кнопкой    мыши   на   узле
+</span><span class=rvts7>Управление
+компьютером</span><span    class=rvts6>    и   выберите   в
+контекстном  меню  пункт </span><span class=rvts7>Новое
+окно   отсюда   (New   Window   from  Here)</span><span  class=rvts6>.
+Будет  открыто окно Управление компьютером,
+представляющее       одноименную      оснастку.
+Закройте  исходное  окно,  содержащее Корень
+консоли.</span></p> 
+<p class=rvps110><span class=rvts6><br></span></p>
+<p    class=rvps111><img   width=585   height=373   alt=""   hspace=1   vspace=1
+src="img3.png"></p> 
+<p  class=rvps112><span  class=rvts6>Рис.  3. Окно «Управление
+компьютером».</span></p> 
+<p       class=rvps113><span      class=rvts6>В      меню      </span><span
+class=rvts7>Окно    (Window)</span><span    class=rvts6>    выберите
+команду     </span><span    class=rvts7>Сверху    вниз    (Tile
+Horizontally).&nbsp; </span></p> 
+<p  class=rvps114><span class=rvts7>2.3.4.&nbsp; Создание панелей
+задач</span></p> 
+<p  class=rvps115><span  class=rvts6>Если  требуется создать
+файл  консоли  для  другого  пользователя, то
+полезно         предоставить         пользователю
+упрощенный         инструмент,        позволяющий
+выполнять   только   несколько  определенных
+задач.  Таким  инструментом  является </span><span
+class=rvts7>Панель             задач            (Taskpad)</span><span
+class=rvts6>.</span></p> 
+<p    class=rvps116><span   class=rvts6>Для   создания   панели
+задач выполните следующее:</span></p> 
+<p       class=rvps117><span      class=rvts6>В      меню      </span><span
+class=rvts7>Действие   (Action)</span><span   class=rvts6>   или   в
+контекстном    меню    любого    узла    в    окне
+консоли  выберите  пункт </span><span class=rvts7>Новый
+вид  панели  задач  (New  Taskpad  View)</span><span class=rvts6>,
+откроется      окно     </span><span     class=rvts7>Мастера
+создания    вида   панели   задач   (New   Taskpad   View
+Wizard)</span><span   class=rvts6>.   Нажмите  кнопку  </span><span
+class=rvts7>Далее.</span></p> 
+<p     class=rvps118><span     class=rvts6>В     следующем    окне
+мастера  (см.  рис.4) будет предложено выбрать
+стиль   отображения  и  размер  панели  задач.
+Затем,   на  панели  задач  вы  можете  указать
+использование   только   тех   задач,  которые
+связаны  с текущим узлом или со всеми узлами
+дерева.     В    следующем    окне    потребуется
+ввести  имя  и  описание  создаваемой  панели
+задач.</span></p> 
+<p        class=rvps119><span        class=rvts6>Если        вы       не
+собираетесь&nbsp;  добавлять  новые  задачи  на
+созданную      панель,&nbsp;      то      снимите     в
+последнем    окне    мастера    флажок    </span><span
+class=rvts7>Запустить    мастер    создания    новой
+задачи    (Start    New    Task   Wizard)</span><span   class=rvts6>.   В
+противном    случае,   по   завершении   работы
+Мастера     создания     вида     панели    задач,
+запустится   </span><span   class=rvts7>Мастер  создания
+задач    (New   Task   Wizard)</span><span   class=rvts6>,   который
+«потребует»  указать функцию задачи: запуск
+команды    меню,   программы   или&nbsp;   команды
+перехода    на    вид,   выбранный   на   вкладке
+</span><span   class=rvts7>Избранное</span><span  class=rvts6>.  При
+этом   если   новая   задача   будет  запускать
+команду  меню, то&nbsp; в следующем окне мастер
+предложит      выбрать      команду     меню     из
+элементов  дерева  консоли  или  из  списка  в
+окне      сведений      данного      элемента.     В
+остальных    окнах    мастера    следуйте    его
+указаниям. </span></p>
+<p        class=rvps119>&nbsp;</p> 
+<p    class=rvps120><img   width=502   height=385   alt=""   hspace=1   vspace=1
+src="img4.png"></p> 
+<p    class=rvps121><span    class=rvts6>Рис.4.    Окно    «Мастер
+создания вида панели задач».</span></p> 
+<p  class=rvps122><span  class=rvts6>Если  требуется создать
+несколько   задач   на   одной   панели,   то&nbsp;
+установите  в последнем окне мастера флажок
+</span><span      class=rvts7>Запустить      этот      мастер
+снова</span><span  class=rvts6>  (</span><span  class=rvts7>Run this wizard
+again)</span><span    class=rvts6>.   Затем   нажмите   кнопку
+</span><span class=rvts7>Готово.</span></p> 
+<p    class=rvps123><span   class=rvts6>Для   удаления   лишних
+меню  и панелей инструментов в созданной&nbsp;
+консоли   выберите   на  панели  инструментов
+меню   </span><span   class=rvts7>Вид   (View)</span><span  class=rvts6>,
+затем,    -    опцию    </span><span    class=rvts7>Настроить
+(Customize)</span><span          class=rvts6>          и         снимите
+соответствующие    флажки    в    окне    </span><span
+class=rvts7>Настройка     вида     (Customize     View)</span><span
+class=rvts6>.</span></p> 
+<p    class=rvps124><span   class=rvts7>2.3.5.   Установка   опций
+консоли</span><span class=rvts6> </span></p> 
+<p  class=rvps125><span  class=rvts6>Если  консоль создается
+для  другого  пользователя,  может оказаться
+полезным   установить   запрет  на  изменение
+консоли.      Для      этого     в     меню     </span><span
+class=rvts7>Консоль</span><span  class=rvts6> выберите пункт
+</span><span  class=rvts7>Параметры (Options)</span><span class=rvts6>,
+затем,      установите      в      списке     </span><span
+class=rvts7>Режим  консоли  (Console  mode</span><span class=rvts6>)
+значение    </span><span    class=rvts7>Пользовательский
+режим</span><span   class=rvts6>  -  </span><span  class=rvts7>полный
+доступ  (User Mode - full access)</span><span class=rvts6>, нажмите
+кнопку    </span><span    class=rvts7>ОК</span><span   class=rvts6>   и
+сохраните      файл.     Новый     режим     начнет
+работать    при    следующем    запуске    файла
+консоли.</span></p> 
+<p       class=rvps126><span      class=rvts6>В      этом      режиме
+пользователь   не   сможет   добавлять   новые
+оснастки    в    инструмент,   но   будет   иметь
+возможность   изменять   расположение   окон.
+</span></p> 
+<p   class=rvps127><span   class=rvts7>3.   Порядок  выполнения
+работы</span></p> 
+<p          class=rvps128><span          class=rvts6>3.1.         Изучите
+теоретический   материал,   изложенный   в&nbsp;
+пункте    2    описания    данной   лабораторной
+работы.</span></p> 
+<p             class=rvps129><span            class=rvts6>3.2. Включите
+закрепленный  за Вами компьютер и выполните
+необходимую процедуру&nbsp;
+регистрации.</span></p> 
+<p            class=rvps130><span           class=rvts6>3.3. Используя
+инструкции    пункта    2    этой   лабораторной
+работы</span><span               class=rvts11>,               </span><span
+class=rvts6>создайте     консоли     администратора
+локальной    сети    класса    </span><span   class=rvts7>С,
+</span><span    class=rvts6>и консоли администраторов подсетей локальной сети, 
+заданной в расчетной части&nbsp; <span lang="ru">Вашего индивидуального задания</span>. </span></p> 
+<p  class=rvps131><span  class=rvts6>Консоль администратора
+локальной  сети  должна  содержать  оснастку
+«</span><span class=rvts7>Управление
+компьютером</span><span  class=rvts6>»  и  панель задач,
+обеспечивающую      запуск      всех      четырех
+консолей администраторов подсетей.</span></p> 
+<p    class=rvps132><span    class=rvts6>Консоль    каждого   из
+администраторов           подсетей           должна
+содержать&nbsp;              оснастку              </span><span
+class=rvts7>"Локальные    пользователи   и   группы"
+</span><span      class=rvts6>и</span><span      class=rvts7>      </span><span
+class=rvts6>панели  задач,  обеспечивающие запуск
+MS Word и Total Commander.</span></p> 
+<p               class=rvps133><span              class=rvts6>Проверьте
+работоспособность созданных
+консолей.</span></p> 
+<p   class=rvps134><span   class=rvts6>3.4.   Оформите   отчет   и
+защитите лабораторную работу.</span></p> 
+<p  class=rvps135><span  class=rvts6>3.5.  Выключите компьютер
+и приведите в порядок рабочее место.</span></p> 
+<p         class=rvps136><span        class=rvts7>4.        Содержание
+отчета</span></p> 
+<p class=rvps137><span class=rvts6>4.1. Цель работы.</span></p>
+<p   class=rvps138><span   class=rvts6>4.2.   Описание  процедур
+создания&nbsp;           консолей.          Результаты
+эксперимента.</span></p> 
+<p       class=rvps139><span       class=rvts6>4.3.       Выводы      по
+работе.</span></p> 
+<p        class=rvps140><span        class=rvts7>5.       Контрольные
+вопросы.</span></p> 
+<p     class=rvps141><span     class=rvts6>1.     Охарактеризуйте
+основные оснастки&nbsp; Windows 2000.&nbsp; </span></p> 
+<p  class=rvps142><span class=rvts6>2. В чем состоят основные
+достоинства ММС?</span></p> 
+<p    class=rvps143><span   class=rvts6>3.   Опишите   процедуру
+создания файла новой консоли.</span></p> 
+<p     class=rvps144><span    class=rvts6>4.    Для    какой    цели
+создается панель задач консоли?</span></p> 
+<p   class=rvps145><span  class=rvts6>5.  Каким  образом  можно
+добавить   новую   оснастку   в   существующую
+консоль?</span></p> 
+<p      class=rvps146><span     class=rvts6>6.     Каким     образом
+осуществляется    удаление    лишних   меню   и
+панелей            инструментов            созданной
+консоли?</span></p> 
+<p  class=rvps147><span  class=rvts6>7. Как установить запрет
+на изменение консоли?</span></p> 
+<p class=rvps148><span class=rvts7>Литература</span></p>
+<p  class=rvps149><span class=rvts6>1. Windows 2000 Professional: Учебный
+курс   MCSE.   </span><span  class=rvts8>–</span><span  class=rvts6>  М.:
+Русская редакция , 2001. -&nbsp; 672с.</span></p> 
+<p   class=rvps150><span   class=rvts6>2.   Безопасность&nbsp;&nbsp;
+сети&nbsp;   на&nbsp;   основе  Windows  2000:  учебный&nbsp;
+курс   MCSE.&nbsp;   </span><span  class=rvts8>–</span><span  class=rvts6>
+М.:&nbsp; Русская редакция , 2001. -&nbsp; 912с.</span></p> 
+<p  class=rvps151><span  class=rvts6>3.  Сети TCP/IP. Ресурсы Windows
+MS   Windows   2000&nbsp;   Server.   </span><span   class=rvts8>–</span><span
+class=rvts6> М.: Русская редакция, 2001.-784с.</span></p> 
+<p   class=rvps152><span   class=rvts6>4.   Олифер  В.Г.  Сетевые
+операционные     системы.     Учебник.    </span><span
+class=rvts8>–</span><span      class=rvts6>     СПб.:&nbsp;     Питер,
+2001.-544с.</span></p> 
+<p   class=rvps153><span  class=rvts6>5. Зубанов  Ф.В.  Windows  2000:
+планирование,   развертывание,   установка.  -
+М.: Русская редакция, 2000.-592с.</span></p> 
+<p class="rvps153">&nbsp;&nbsp;&nbsp; </p>
+<p class="rvps153"><a href="../../practice.htm">
+<img src="../lb1/Menu.gif" width="73" height="22" class="style3"></a></p>
+</body></html>
