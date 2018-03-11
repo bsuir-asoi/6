@@ -1,0 +1,5 @@
+D:\Documents\Projects\Databaseseseses\laba1\laba1\bin\Debug\laba1.dacpac
+D:\Documents\Projects\Databaseseseses\laba1\laba1\bin\Debug\laba1.dll
+D:\Documents\Projects\Databaseseseses\laba1\laba1\bin\Debug\laba1.pdb
+D:\Documents\Projects\Databaseseseses\laba1\laba1\obj\Debug\laba1.dll
+D:\Documents\Projects\Databaseseseses\laba1\laba1\obj\Debug\laba1.pdb
