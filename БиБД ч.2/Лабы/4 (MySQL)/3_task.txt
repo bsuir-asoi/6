@@ -1,0 +1,8 @@
+delimiter //
+create procedure merch(IN tov varchar(45))
+begin 
+select Tovar from sklad where Tovar LIKE concat ('%',tov,'%');
+end; 
+// 
+delimiter ;
+

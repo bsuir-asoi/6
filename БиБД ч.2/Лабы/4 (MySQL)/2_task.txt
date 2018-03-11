@@ -1,0 +1,7 @@
+delimiter //
+create procedure tax(IN perc double)
+begin 
+select tovar, price*kol*perc/100 as Nalog from sklad;
+end; 
+// 
+delimiter ;

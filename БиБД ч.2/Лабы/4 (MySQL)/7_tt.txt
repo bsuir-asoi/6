@@ -1,0 +1,11 @@
+delimiter //
+create function f7(x varchar(30)) returns varchar(25)
+begin
+if(x not RLIKE '[A-Z]') then
+return 'Yes';
+else 
+return 'No';
+end if;
+end;
+//
+delimiter ;

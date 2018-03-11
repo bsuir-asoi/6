@@ -1,0 +1,10 @@
+delimiter //
+create function fun2(tov varchar(45)) returns float
+ begin
+declare z float;
+select avg(price) into z from sklad where Tovar=tov;
+return z;
+end; 
+//
+delimiter ;
+

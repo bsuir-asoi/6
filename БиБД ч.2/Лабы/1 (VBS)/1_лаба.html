@@ -1,0 +1,314 @@
+<HTML>
+	<H3><Font Color=White>Что-то на VBS</Font></H3>
+	<head><link rel="stylesheet" type="text/css" href="1.css" />
+	<title>C 8 марта!!!</title>
+	</head>
+<HR>
+	<SCRIPT LANGUAGE="VBScript">
+	<!--
+	Option Explicit
+	Dim blnValue, strUserName, xCustomer, objacc, strConnection, strDataBase, rs, sfio, sq, strSql, a, b, st, str, i, e, Str1, Str2, k, z, ops, tabl, kol, objWord, x, objRange, objTable, objDoc, rsn
+	
+	sub showAccess
+	Set objacc = CreateObject("ADODB.Connection")
+	strConnection = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source="
+	strDataBase = "D:\Documents\Projects\BiBD\laba1\db1.mdb"
+	objacc.Open strConnection & strDataBase
+	Set rs = CreateObject("ADODB.Recordset")
+	objacc.BeginTrans
+	strSql = "Select tovar.*, proizv.* " _
+    & "from tovar " _
+    & "inner join proizv on tovar.kod_pr = proizv.kod_p;"
+	rs.Open strSql,objacc,3,3
+	rs.movefirst
+	document.frm.titl.value = rs("Title")
+	document.frm.tprice.value = rs("Price")
+	document.frm.tamount.value = rs("Amount")
+	document.frm.tproizv.value = rs("Proizv")
+	document.frm.tadress.value = rs("Adress")
+	document.getElementById("Image").src=rs("Image")
+	a = rs("Kod_P")
+	b = rs("ID_Tovar")
+	document.frm.b4.disabled=0
+	document.frm.b5.disabled=0
+	document.frm.b6.disabled=0
+	document.frm.b7.disabled=0
+	document.frm.b8.disabled=0
+	document.frm.b9.disabled=0
+	document.frm.b10.disabled=0
+	end sub
+	
+	sub s2
+	Dim objWord, x, objRange,objTable, objDoc,objSelection
+	Set objWord = CreateObject("Word.Application")
+	objWord.Visible = True
+	Set objDoc = objWord.Documents.Add()
+	Set objSelection = objWord.Selection
+	objSelection.Font.Name = "Arial"
+	objSelection.Font.Size = "12"
+	objSelection.TypeText "Item report"
+	objSelection.TypeParagraph() 
+	objSelection.TypeParagraph()
+	Set objRange = objSelection.Range 
+	objDoc.Tables.Add objRange,1,6
+	Set objTable = objDoc.Tables(1)
+	x=2
+	rs.movefirst
+	WHILE NOT rs.EOF
+	objTable.Rows.Add()
+	objTable.Cell(1, 1).Range.Font.Bold = true
+	objTable.Cell(1, 2).Range.Font.Bold = true
+	objTable.Cell(1, 3).Range.Font.Bold = true
+	objTable.Cell(1, 4).Range.Font.Bold = true
+	objTable.Cell(1, 5).Range.Font.Bold = true
+	objTable.Cell(1, 6).Range.Font.Bold = true
+	objTable.Cell(1, 1).Range.Text = "TITLE"
+	objTable.Cell(1, 2).Range.Text = "PRICE"
+	objTable.Cell(1, 3).Range.Text = "AMOUNT"
+	objTable.Cell(1, 4).Range.Text = "PROIZVOD"
+	objTable.Cell(1, 5).Range.Text = "ADRESS"
+	objTable.Cell(1, 6).Range.Text = "NALOG"
+	objTable.Cell(x, 1).Range.Text = rs("title")
+	objTable.Cell(x, 2).Range.text = rs("price")
+	objTable.Cell(x, 3).Range.text = rs("amount")
+	objTable.Cell(x, 4).Range.text = rs("Proizv")
+	objTable.Cell(x, 5).Range.text = rs("adress")	
+	objTable.Cell(x, 6).Range.text = 0.12*rs("price")*rs("amount")
+	x = x + 1
+	rs.MoveNext
+	Wend
+	
+	objTable.AutoFormat(3)
+	const END_OF_STORY=6
+	const MOVE_Selection=0
+	objSelection.EndKey END_OF_STORY, MOVE_Selection
+	objSelection.TypeParagraph() 
+	objSelection.TypeParagraph() 
+	Set objRange = objSelection.Range 
+	objDoc.Tables.Add objRange,1,3
+	Set objTable = objDoc.Tables(2)
+
+	Set rsn = CreateObject("ADODB.Recordset")
+	strSql = "Select  * from Proizv ;" 
+    	rsn.Open strSql,objacc,3,3
+	rsn.movefirst
+
+
+	x=2
+	WHILE NOT rsn.EOF
+	objTable.Rows.Add()
+	objTable.Cell(1, 1).Range.Font.Bold = true
+	objTable.Cell(1, 2).Range.Font.Bold = true
+	objTable.Cell(1, 3).Range.Font.Bold = true
+	objTable.Cell(1, 1).Range.Text = "TITLE"
+	objTable.Cell(1, 2).Range.Text = "Proizv"
+	objTable.Cell(1, 3).Range.Text = "AMOUNT"
+	objTable.Cell(x, 1).Range.text = rsn("Proizv")
+	objTable.Cell(x, 2).Range.text = rsn("Adress")
+	objTable.Cell(x,3).Range.text = rsn("Kod_P")
+	x = x + 1
+	rsn.MoveNext
+	Wend
+
+	objTable.AutoFormat(3)
+	end sub
+	
+	
+	
+	sub forward
+	on Error resume next
+	if rs.eof = false then
+	rs.movenext
+	if rs.eof = true then
+	end if
+	if rs.eof = false then
+	if Err.Number<>0 then
+	msgbox Err.Description
+	exit sub
+	end if
+	else
+	rs.movefirst
+	end if
+	else
+	'rs.movefirst
+	end if
+	document.frm.titl.value = rs("Title")
+	document.frm.tprice.value = rs("Price")
+	document.frm.tamount.value = rs("Amount")
+	document.frm.tproizv.value = rs("Proizv")
+	document.frm.tadress.value = rs("Adress")
+	document.getElementById("Image").src=rs("Image")
+	a = rs("Kod_P")
+	b = rs("ID_Tovar")
+	end sub
+	
+	sub back
+	on Error resume next
+	if rs.bof = false then
+	rs.moveprevious
+	if rs.bof = true then
+	end if
+	if rs.bof = false then
+	if Err.Number<>0 then
+	msgbox Err.Description
+	exit sub
+	end if
+	else
+	rs.movelast
+	end if
+	else
+	'rs.movelast
+	end if
+	document.frm.titl.value = rs("Title")
+	document.frm.tprice.value = rs("Price")
+	document.frm.tamount.value = rs("Amount")
+	document.frm.tproizv.value = rs("Proizv")
+	document.frm.tadress.value = rs("Adress")
+	document.getElementById("Image").src=rs("Image")
+	a = rs("Kod_P")
+	b = rs("ID_Tovar")
+	end sub
+	
+	sub add
+	rs.addnew
+	ops = ops+10
+	rs("ID_Tovar") = b+ops
+	rs("Kod_PR") = a
+	rs("Title") = document.frm.titl.value
+	rs("Price") = document.frm.tprice.value
+	rs("Amount") = document.frm.tamount.value
+	rs("Image") = document.getElementById("Image").src
+	rs.update
+	objacc.committrans
+	rs.close
+	objacc.close
+	call showAccess
+	end sub
+	
+	sub update
+	rs("Title") = document.frm.titl.value
+	rs("Price") = document.frm.tprice.value
+	rs("Amount") = document.frm.tamount.value
+	rs("Image") = document.getElementById("Image").src
+	rs.update
+	objacc.committrans
+	rs.close
+	objacc.close
+	call showAccess
+	end sub
+	
+	sub delete
+	i = rs("ID_Tovar")
+	Set objacc = CreateObject("ADODB.Connection")
+	strConnection = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source="
+	strDataBase = "D:\Documents\Projects\BiBD\laba1\db1.mdb"
+	objacc.Open strConnection & strDataBase
+	Set st = CreateObject("ADODB.Recordset")
+	objacc.BeginTrans
+	str = "Select * from Tovar"
+	st.Open str,objacc,3,3
+	st.movefirst
+	for k = 0 to rs.RecordCount-1
+	if i=st("ID_Tovar") then
+	st.delete
+	st.update
+	objacc.committrans
+	st.close
+	objacc.close
+	exit sub
+	end if
+	st.movenext
+	next
+	call showAccess
+	end sub
+	
+	sub search
+	tabl = "<table align=center border=1 cellspacing=0 cellpadding=8 width=50% style=background-color:#cc0000; color:#ffffff><tr><td>Title</td><td>Price</td><td>Amount</td><td>Proizv</td><td>Adress</td></tr>"
+	Set objacc = CreateObject("ADODB.Connection")
+	strConnection = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source="
+	strDataBase = "D:\Documents\Projects\BiBD\laba1\db1.mdb"
+	objacc.Open strConnection & strDataBase
+	Set rs = CreateObject("ADODB.Recordset")
+	objacc.BeginTrans
+	strSql = "Select tovar.*, proizv.* " _
+    & "from tovar " _
+    & "inner join proizv on tovar.kod_pr = proizv.kod_p;"
+	rs.Open strSql,objacc,3,3
+	rs.movefirst
+	Str1 = document.frm.tsearch.value
+	if Str1="" then
+	msgbox("Fill search field")
+	exit sub
+	end if
+	for k = 0 to rs.RecordCount-1
+	if k<>0 then
+	if Str1="*" then
+	tabl=tabl+"<tr><td>"&rs("Title")&"</td><td>"&rs("Price")&"</td><td>"&rs("Amount")&"</td><td>"&rs("Proizv")&"</td><td>"&rs("Adress")&"</td></tr>"
+	end if
+	rs.movenext
+	end if
+	for z = 0 to 4
+	Select Case z
+	Case "0"
+	Str2 = rs("Title")
+	Case "1"
+	Str2 = rs("Price")
+	Case "2"
+	Str2 = rs("Amount")
+	Case "3"
+	Str2 = rs("Proizv")
+	Case "4"
+	Str2 = rs("Adress")
+	end select
+	if InStr (1, Str2, Str1) <> 0 then
+	kol=kol+1
+	tabl=tabl+"<tr><td>"&rs("Title")&"</td><td>"&rs("Price")&"</td><td>"&rs("Amount")&"</td><td>"&rs("Proizv")&"</td><td>"&rs("Adress")&"</td></tr>"
+	end if
+        next
+	next
+	tabl=tabl+"</table>"
+	document.getElementById("t").innerHTML = tabl
+	if kol=0 and Str1<>"*" then
+	msgbox("No Results.")
+	end if
+	end sub
+	-->
+	</SCRIPT>
+	<BODY bgcolor="0x965">
+	<form name="frm">
+	<h1>Product information</h1>
+	<hr>
+	<pre>
+TIT:	<Input type = "TextField" name = "titl" value = "" size = 20>
+PRI:	<Input type = "TextField" name = "tprice" value = "" size = 20>
+AMO:	<Input type = "TextField" name = "tamount" value = "" size = 20>
+FRM:	<Input type = "TextField" name = "tproizv" value = "" size = 20>
+ADR:	<Input type = "TextField" name = "tadress" value = "" size = 20>
+SEA:	<Input type = "TextField" name = "tsearch" value = "" size = 20>
+	</pre>
+	<div id="t"></div>
+	<br><br><br>
+	<img id="Image" style="float:left; height:200px;"/>
+	<br>
+	<br>
+	<center>
+	<br>
+	<br>
+	<table bgcolor = 0x55aadd border = 2>
+	<tr>
+	<td><input type = "Button" name = "b3" value = "ShowACCESS" onClick = "call showAccess"></td>
+	<td><input type = "Button" name = "b4" value = "<-" onClick = "call back" disabled ></td>
+	<td><input type = "Button" name = "b5" value = "->" onClick = "call forward" disabled></td>
+	<td><input type = "Button" name = "b6" value = "Add" onClick = "call add" disabled></td>
+	<td><input type = "Button" name = "b7" value = "Delete" onClick = "call delete" disabled></td>
+	<td><input type = "Button" name = "b9" value = "Update" onClick = "call update" disabled></td>
+	<td><input type = "Button" name = "b10" value = "Word" onClick = "call s2" disabled></td>
+	</tr>
+	<tr>
+	<td colspan = 7 align = center><input type = "Button" name = "b8" value = "                       Find                       " onClick = "call search" disabled></td>
+	</tr>
+	</center>
+	</form>
+	</script>
+	</BODY>
+	</HTML>

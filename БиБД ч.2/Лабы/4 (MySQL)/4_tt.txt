@@ -1,0 +1,11 @@
+delimiter //
+create function f4(x varchar(30)) returns varchar(25)
+begin
+if(x RLIKE '^(Minsk|Moscow|Kiev|Petersburg)$') then
+return 'Yes';
+else 
+return 'No';
+end if;
+end;
+//
+delimiter ;

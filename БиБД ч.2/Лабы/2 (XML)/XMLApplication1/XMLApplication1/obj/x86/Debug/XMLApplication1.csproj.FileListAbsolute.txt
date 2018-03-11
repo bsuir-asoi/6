@@ -1,0 +1,67 @@
+C:\Users\lenovo\AppData\Local\Temporary Projects\XMLApplication1\bin\Debug\XMLApplication1.exe
+C:\Users\lenovo\AppData\Local\Temporary Projects\XMLApplication1\bin\Debug\XMLApplication1.pdb
+C:\Users\lenovo\AppData\Local\Temporary Projects\XMLApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\lenovo\AppData\Local\Temporary Projects\XMLApplication1\obj\x86\Debug\XMLApplication1.Form1.resources
+C:\Users\lenovo\AppData\Local\Temporary Projects\XMLApplication1\obj\x86\Debug\XMLApplication1.Properties.Resources.resources
+C:\Users\lenovo\AppData\Local\Temporary Projects\XMLApplication1\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\lenovo\AppData\Local\Temporary Projects\XMLApplication1\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\lenovo\AppData\Local\Temporary Projects\XMLApplication1\obj\x86\Debug\XMLApplication1.exe
+C:\Users\lenovo\AppData\Local\Temporary Projects\XMLApplication1\obj\x86\Debug\XMLApplication1.pdb
+C:\Users\lenovo\documents\visual studio 2010\Projects\XMLApplication1\XMLApplication1\obj\x86\Debug\XMLApplication1.exe
+C:\Users\lenovo\documents\visual studio 2010\Projects\XMLApplication1\XMLApplication1\obj\x86\Debug\XMLApplication1.pdb
+C:\Users\lenovo\Documents\Visual Studio 2010\Projects\XMLApplication1\XMLApplication1\bin\Debug\XMLApplication1.exe
+C:\Users\lenovo\Documents\Visual Studio 2010\Projects\XMLApplication1\XMLApplication1\bin\Debug\XMLApplication1.pdb
+C:\Users\lenovo\Documents\Visual Studio 2010\Projects\XMLApplication1\XMLApplication1\obj\x86\Debug\XMLApplication1.Form1.resources
+C:\Users\lenovo\Documents\Visual Studio 2010\Projects\XMLApplication1\XMLApplication1\obj\x86\Debug\XMLApplication1.Properties.Resources.resources
+C:\Users\lenovo\Documents\Visual Studio 2010\Projects\XMLApplication1\XMLApplication1\bin\Debug\Product.xml
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\XMLApplication1\XMLApplication1\obj\x86\Debug\XMLApplication1.Form2.resources
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\XMLApplication1\XMLApplication1\obj\x86\Debug\Interop.ADODB.dll
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\XMLApplication1\XMLApplication1\obj\x86\Debug\Interop.ADOMD.dll
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\XMLApplication1\XMLApplication1\obj\x86\Debug\Interop.ADOX.dll
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\XMLApplication1\XMLApplication1\obj\x86\Debug\XMLApplication1.csproj.ResolveComReference.cache
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\XMLApplication1\XMLApplication1\bin\Debug\Interop.ADOX.dll
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\XMLApplication1\XMLApplication1\obj\x86\Debug\XMLApplication1.csproj.GenerateResource.Cache
+C:\Users\Илья\Desktop\бибд лб2\XMLApplication1\XMLApplication1\obj\x86\Debug\Interop.ADODB.dll
+C:\Users\Илья\Desktop\бибд лб2\XMLApplication1\XMLApplication1\obj\x86\Debug\Interop.ADOMD.dll
+C:\Users\Илья\Desktop\бибд лб2\XMLApplication1\XMLApplication1\obj\x86\Debug\Interop.ADOX.dll
+C:\Users\Илья\Desktop\бибд лб2\XMLApplication1\XMLApplication1\obj\x86\Debug\XMLApplication1.csproj.ResolveComReference.cache
+C:\Users\Илья\Desktop\бибд лб2\XMLApplication1\XMLApplication1\obj\x86\Debug\XMLApplication1.exe
+C:\Users\Илья\Desktop\бибд лб2\XMLApplication1\XMLApplication1\obj\x86\Debug\XMLApplication1.pdb
+C:\Users\Илья\Desktop\бибд лб2\XMLApplication1\XMLApplication1\bin\Debug\Product.xml
+C:\Users\Илья\Desktop\бибд лб2\XMLApplication1\XMLApplication1\bin\Debug\XMLApplication1.exe
+C:\Users\Илья\Desktop\бибд лб2\XMLApplication1\XMLApplication1\bin\Debug\XMLApplication1.pdb
+C:\Users\Илья\Desktop\бибд лб2\XMLApplication1\XMLApplication1\bin\Debug\Interop.ADOX.dll
+C:\Users\Илья\Desktop\бибд лб2\XMLApplication1\XMLApplication1\obj\x86\Debug\XMLApplication1.Form1.resources
+C:\Users\Илья\Desktop\бибд лб2\XMLApplication1\XMLApplication1\obj\x86\Debug\XMLApplication1.Form2.resources
+C:\Users\Илья\Desktop\бибд лб2\XMLApplication1\XMLApplication1\obj\x86\Debug\XMLApplication1.Properties.Resources.resources
+C:\Users\Илья\Desktop\бибд лб2\XMLApplication1\XMLApplication1\obj\x86\Debug\XMLApplication1.csproj.GenerateResource.Cache
+H:\бибд лб2\XMLApplication1\XMLApplication1\obj\x86\Debug\Interop.ADODB.dll
+H:\бибд лб2\XMLApplication1\XMLApplication1\obj\x86\Debug\Interop.ADOMD.dll
+H:\бибд лб2\XMLApplication1\XMLApplication1\obj\x86\Debug\Interop.ADOX.dll
+H:\бибд лб2\XMLApplication1\XMLApplication1\obj\x86\Debug\XMLApplication1.csproj.ResolveComReference.cache
+H:\бибд лб2\XMLApplication1\XMLApplication1\obj\x86\Debug\XMLApplication1.exe
+H:\бибд лб2\XMLApplication1\XMLApplication1\obj\x86\Debug\XMLApplication1.pdb
+H:\бибд лб2\XMLApplication1\XMLApplication1\bin\Debug\Product.xml
+H:\бибд лб2\XMLApplication1\XMLApplication1\bin\Debug\XMLApplication1.exe
+H:\бибд лб2\XMLApplication1\XMLApplication1\bin\Debug\XMLApplication1.pdb
+H:\бибд лб2\XMLApplication1\XMLApplication1\bin\Debug\Interop.ADOX.dll
+H:\бибд лб2\XMLApplication1\XMLApplication1\obj\x86\Debug\XMLApplication1.csprojResolveAssemblyReference.cache
+H:\бибд лб2\XMLApplication1\XMLApplication1\obj\x86\Debug\XMLApplication1.Form1.resources
+H:\бибд лб2\XMLApplication1\XMLApplication1\obj\x86\Debug\XMLApplication1.Form2.resources
+H:\бибд лб2\XMLApplication1\XMLApplication1\obj\x86\Debug\XMLApplication1.Properties.Resources.resources
+H:\бибд лб2\XMLApplication1\XMLApplication1\obj\x86\Debug\XMLApplication1.csproj.GenerateResource.Cache
+C:\Users\LoOmak\Desktop\XMLApplication1\XMLApplication1\obj\x86\Debug\Interop.ADODB.dll
+C:\Users\LoOmak\Desktop\XMLApplication1\XMLApplication1\obj\x86\Debug\Interop.ADOMD.dll
+C:\Users\LoOmak\Desktop\XMLApplication1\XMLApplication1\obj\x86\Debug\Interop.ADOX.dll
+C:\Users\LoOmak\Desktop\XMLApplication1\XMLApplication1\obj\x86\Debug\XMLApplication1.csproj.ResolveComReference.cache
+C:\Users\LoOmak\Desktop\XMLApplication1\XMLApplication1\obj\x86\Debug\XMLApplication1.exe
+C:\Users\LoOmak\Desktop\XMLApplication1\XMLApplication1\obj\x86\Debug\XMLApplication1.pdb
+C:\Users\LoOmak\Desktop\XMLApplication1\XMLApplication1\bin\Debug\Product.xml
+C:\Users\LoOmak\Desktop\XMLApplication1\XMLApplication1\bin\Debug\XMLApplication1.exe
+C:\Users\LoOmak\Desktop\XMLApplication1\XMLApplication1\bin\Debug\XMLApplication1.pdb
+C:\Users\LoOmak\Desktop\XMLApplication1\XMLApplication1\bin\Debug\Interop.ADOX.dll
+C:\Users\LoOmak\Desktop\XMLApplication1\XMLApplication1\obj\x86\Debug\XMLApplication1.csprojResolveAssemblyReference.cache
+C:\Users\LoOmak\Desktop\XMLApplication1\XMLApplication1\obj\x86\Debug\XMLApplication1.Form1.resources
+C:\Users\LoOmak\Desktop\XMLApplication1\XMLApplication1\obj\x86\Debug\XMLApplication1.Form2.resources
+C:\Users\LoOmak\Desktop\XMLApplication1\XMLApplication1\obj\x86\Debug\XMLApplication1.Properties.Resources.resources
+C:\Users\LoOmak\Desktop\XMLApplication1\XMLApplication1\obj\x86\Debug\XMLApplication1.csproj.GenerateResource.Cache

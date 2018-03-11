@@ -1,0 +1,11 @@
+delimiter //
+create procedure additem(IN tov varchar(25), pr INT, k int, post date)
+begin
+if (exists(select tovar from sklad where tovar=tov)) then
+update sklad set price=pr, kol=k, postavka=post where tovar=tov;
+else
+insert into sklad (Tovar, price, kol, postavka) values(tov, pr, k, post);
+end if;
+end;
+//
+delimiter ;

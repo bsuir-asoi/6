@@ -1,0 +1,11 @@
+delimiter //
+create procedure 4th_task(OUT o INT)
+begin
+DECLARE cur CURSOR FOR SELECT count(tovar) FROM sklad 
+WHERE tovar=(SELECT tovar FROM sklad GROUP BY tovar HAVING Count(tovar)>1 LIMIT 1);
+open cur;
+FETCH cur INTO o;
+close cur;
+end;
+//
+delimiter ;

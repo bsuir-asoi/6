@@ -1,0 +1,14 @@
+C:\Users\Илья\Desktop\бибд лб2\XMLApplication1\XMLApplication1\bin\Release\Product.xml
+C:\Users\Илья\Desktop\бибд лб2\XMLApplication1\XMLApplication1\bin\Release\XMLApplication1.exe
+C:\Users\Илья\Desktop\бибд лб2\XMLApplication1\XMLApplication1\bin\Release\XMLApplication1.pdb
+C:\Users\Илья\Desktop\бибд лб2\XMLApplication1\XMLApplication1\bin\Release\Interop.ADOX.dll
+C:\Users\Илья\Desktop\бибд лб2\XMLApplication1\XMLApplication1\obj\x86\Release\Interop.ADODB.dll
+C:\Users\Илья\Desktop\бибд лб2\XMLApplication1\XMLApplication1\obj\x86\Release\Interop.ADOMD.dll
+C:\Users\Илья\Desktop\бибд лб2\XMLApplication1\XMLApplication1\obj\x86\Release\Interop.ADOX.dll
+C:\Users\Илья\Desktop\бибд лб2\XMLApplication1\XMLApplication1\obj\x86\Release\XMLApplication1.csproj.ResolveComReference.cache
+C:\Users\Илья\Desktop\бибд лб2\XMLApplication1\XMLApplication1\obj\x86\Release\XMLApplication1.Form1.resources
+C:\Users\Илья\Desktop\бибд лб2\XMLApplication1\XMLApplication1\obj\x86\Release\XMLApplication1.Form2.resources
+C:\Users\Илья\Desktop\бибд лб2\XMLApplication1\XMLApplication1\obj\x86\Release\XMLApplication1.Properties.Resources.resources
+C:\Users\Илья\Desktop\бибд лб2\XMLApplication1\XMLApplication1\obj\x86\Release\XMLApplication1.csproj.GenerateResource.Cache
+C:\Users\Илья\Desktop\бибд лб2\XMLApplication1\XMLApplication1\obj\x86\Release\XMLApplication1.exe
+C:\Users\Илья\Desktop\бибд лб2\XMLApplication1\XMLApplication1\obj\x86\Release\XMLApplication1.pdb

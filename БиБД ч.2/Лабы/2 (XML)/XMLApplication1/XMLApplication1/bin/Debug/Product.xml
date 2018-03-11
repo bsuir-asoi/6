@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Table>
+  <Product>
+    <id>1</id>
+    <name>Ноутбук</name>
+    <price>800</price>
+    <count>20</count>
+  </Product>
+  <Product>
+    <id>2</id>
+    <name>Смартфон</name>
+    <price>300</price>
+    <count>58</count>
+  </Product>
+  <Product>
+    <id>3</id>
+    <name>USB-Flash</name>
+    <price>30</price>
+    <count>200</count>
+  </Product>
+  <Product>
+    <id>4</id>
+    <name>Планшет</name>
+    <price>500</price>
+    <count>27</count>
+  </Product>
+  <Product>
+    <id>5</id>
+    <name>Компьютер</name>
+    <price>1200</price>
+    <count>7</count>
+  </Product>
+  <Product>
+    <id>6</id>
+    <name>Винчестер</name>
+    <price>280</price>
+    <count>56</count>
+  </Product>
+</Table>

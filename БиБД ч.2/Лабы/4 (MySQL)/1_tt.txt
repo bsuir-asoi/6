@@ -1,0 +1,14 @@
+delimiter //
+create function f1(x int) returns varchar(25)
+begin
+if (exists(select tovar from sklad where id_tov=x AND tovar not RLIKE '^(e|u|i|o|a)|[0-9]')) then
+return 'Yes';
+else 
+return 'No';
+end if;
+end;
+//
+delimiter ;
+
+
+

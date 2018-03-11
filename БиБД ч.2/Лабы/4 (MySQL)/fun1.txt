@@ -1,0 +1,15 @@
+delimiter //
+create function fun1(x varchar(25)) returns float
+begin
+	DECLARE o float;
+	set o =(SELECT sum(s.su) FROM (SELECT CASE
+		when (price*kol)<=45000 then ((price*kol)*0.2)
+		when ((price*kol)>45000) and ((price*kol)<=100000) then ((price*kol)*0.3)
+		when (price*kol)>100000 then ((price*kol)*0.4)
+	END as su
+	FROM sklad WHERE tovar=x) as s);
+	return o;
+end;
+//	
+delimiter ;
+

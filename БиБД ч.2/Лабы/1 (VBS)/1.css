@@ -1,0 +1,132 @@
+body { 
+	background-color: #b5a789;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: small;
+	margin: 0px;
+}
+
+#main {
+	background: #efe5d0 url(images/background.gif) top left;
+	font-size: 105%;
+	padding: 15px;
+	margin: 0px 10px 10px 10px;
+}
+
+#sidebar {
+	background: #efe5d0 url(images/background.gif) bottom right;
+	font-size: 105%;
+	padding: 15px;
+	margin: 0px 10px 10px 10px;
+}
+
+#footer {
+	background-color: #675c47;
+	color: #efe5d0;
+	text-align: center;
+	padding: 15px;
+	margin: 10px;
+	font-size: 90%;
+}
+
+#header {
+	background-color: #675c47;
+	margin: 10px;
+	height: 108px;
+}
+
+#drinks {
+	background: #efe5d0 url(images/background.gif) top left;
+	font-size: 105%;
+	padding: 15px;
+	margin: 0px 10px 10px 10px;
+}
+
+h1 {
+	font-size: 120%;
+	color: #954b4b;
+}
+
+h2 {
+	font-size: 110%;
+}
+
+.slogan {
+	color: #954b4b;
+}
+
+.beanheading {
+	text-align: center;
+	line-height: 1.8em;
+}
+
+.beanheading img {
+	width: 60%;
+}
+
+a:link {
+	color: #b76666;
+	text-decoration: none;
+	border-bottom: thin dotted #b76666;
+}
+a:visited {
+	color: #675c47;
+	text-decoration: none;
+	border-bottom: thin dotted #675c47;
+}
+
+#sidebar {
+	float: right;
+	width: 180px;
+}
+
+#main {
+	margin-right: 230px;
+	margin-left: 165px;
+}
+
+#drinks {
+	float: left;
+	width: 115px;
+}
+
+
+#footer {
+	clear: both;
+}
+
+/*
+#coupon {
+	display: none;
+	position: fixed;
+	top: 300px;
+	left: -90px;
+}
+
+#coupon img {
+	border: none;
+}
+#coupon a:link {
+	border: none;
+}
+#coupon a:visited {
+	border: none;
+}
+
+#content {
+	width: 800px;
+	margin: auto;
+}
+
+#award {
+	position: absolute;
+	top: 30px;
+	left: 365px;
+}
+*/
+
+#coupon {
+	display: none;
+}
+#award {
+	display: none;
+}

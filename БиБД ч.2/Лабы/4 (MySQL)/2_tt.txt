@@ -1,0 +1,11 @@
+delimiter //
+create function f2(x varchar(30)) returns varchar(25)
+begin
+if(exists(select id_tov from sklad where tovar=x AND id_tov RLIKE '%[0-9]%')) then
+return 'Yes';
+else 
+return 'No';
+end if;
+end;
+//
+delimiter ;
