@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+>
+<head>
+    <title>Employees</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+</head>
+<body>
+<div class="main-container">
+
+    <div class="inner-container">
+        <h2>Add employee</h2>
+        <h:form>
+            <div class="form-group">
+                <h:outputText value="Name: "/>
+                <h:inputText class="form-control" value="#{employeeBean.name}" required="true"/>
+            </div>
+            <div class="form-group">
+                <h:outputText value="Address: "/>
+                <h:inputText class="form-control" value="#{employeeBean.address}" required="true"/>
+            </div>
+            <div class="form-group">
+                <h:outputText value="Department: "/>
+                <h:inputText class="form-control" value="#{employeeBean.department}" required="true"/>
+            </div>
+            <div class="form-group">
+                <h:outputText value="Salary: "/>
+                <h:inputText class="form-control" value="#{employeeBean.salary}" required="true"/>
+            </div>
+            <h:commandButton class="btn btn-primary" value="Add" action="#{employeeBean.addEmployee()}"/>
+        </h:form>
+    </div>
+
+
+
+    <div class="inner-container">
+        <h2>Get info</h2>
+        <h:form>
+            <div class="form-group">
+                <h:outputText value="Name: "/>
+                <h:inputText class="form-control" value="#{employeeBean.searchedName}" required="true"/>
+            </div>
+            <h:commandButton class="btn btn-primary" value="Get info" action="#{employeeBean.getEmployeeByName()}"/>
+        </h:form>
+        <h:outputText value="Address: #{employeeBean.searchedEmployee.address}"/>
+        <br/>
+        <h:outputText value="Department: #{employeeBean.searchedEmployee.department}"/>
+        <br/>
+        <h:outputText value="Salary: #{employeeBean.searchedEmployee.salary}"/>
+    </div>
+
+    <div class="inner-container" style="width: 50%">
+        <h2>Employee list</h2>
+        <h:form>
+            <h:dataTable value="#{employeeBean.employees}" var="employee">
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="Name  "/>
+                    </f:facet>
+                    <h:outputText value="#{employee.name}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="Address  "/>
+                    </f:facet>
+                    <h:outputText value="#{employee.address}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="Department  "/>
+                    </f:facet>
+                    <h:outputText value="#{employee.department}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="Salary"/>
+                    </f:facet>
+                    <h:outputText value="#{employee.salary}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="Delete"/>
+                    </f:facet>
+                    <h:commandButton class="btn btn-danger" value="Delete"
+                                     action="#{employeeBean.deleteEmployee(employee)}"/>
+                </h:column>
+            </h:dataTable>
+        </h:form>
+    </div>
+
+</div>
+</body>
+</html>

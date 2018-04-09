@@ -1,0 +1,12 @@
+.main-container {
+    display: flex;
+}
+
+.inner-container {
+    width: 25%;
+    margin: 50px;
+}
+
+h1 {
+    text-align: center;
+}
