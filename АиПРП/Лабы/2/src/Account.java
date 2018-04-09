@@ -27,7 +27,7 @@ public class Account extends Thread {
             try {
                 PrintStream ps = new PrintStream(s.getOutputStream());
                 int amountcur = (int) (Math.random() * 1000); // if negative - withdrawals from the account
-                if (Math.random() > 0.5)// WHY
+                if (Math.random() > 0.5)//
                     amount -= amountcur;
                 else
                     amount += amountcur;

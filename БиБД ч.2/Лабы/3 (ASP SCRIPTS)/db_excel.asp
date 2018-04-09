@@ -10,11 +10,11 @@ if con.State=1 then
 	Response.AddHeader "Accept-Charset", "utf-8"
 	Response.AddHeader "Content-Language", "en, ase, ru"
 	if rs.eof <> true then
-		response.write "<center><font color=3f3f3f>База данных студентов</font></center><br>"
+		response.write "<center><font color=3f3f3f>  </font></center><br>"
 		response.write "<table border=1>"
-		%><strong><tr><td>ID студента</td><td>Имя</td><td>Группа</td><td>Возраст</td>
-		<td>Успеваемость</td><td>Название фото</td>
-		<td>Автор</td><td>Название книги</td></tr></strong><%
+		%><strong><tr><td>ID </td><td></td><td></td><td></td>
+		<td></td><td> </td>
+		<td></td><td> </td></tr></strong><%
 		while not rs.eof
 			response.write "<tr><td>" & rs.fields("stud.id") & "</td><td>" & _
 			rs.fields("name") & "</td><td>" & rs.fields("group") & "</td><td>" & _

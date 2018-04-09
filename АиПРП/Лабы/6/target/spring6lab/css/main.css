@@ -1,0 +1,16 @@
+.main-container {
+    display: flex;
+}
+
+.inner-container {
+    width: 25%;
+    margin: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    width: 100%;
+}

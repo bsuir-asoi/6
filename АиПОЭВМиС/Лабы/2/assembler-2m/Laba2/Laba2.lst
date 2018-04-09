@@ -1,0 +1,75 @@
+Microsoft (R) Macro Assembler Version 14.11.25547.0	    03/16/18 21:34:09
+AsmSource.asm						     Page 1 - 1
+
+
+				.686
+				.MODEL FLAT, C
+				.STACK
+ 00000000			.DATA
+				;-----------Local data------------------------------
+ 00000000 4D 61 6C 61 6E	messageFormat BYTE "Malanenko Yan Sergeevich, 520601!", 10, 13, 0
+	   65 6E 6B 6F 20
+	   59 61 6E 20 53
+	   65 72 67 65 65
+	   76 69 63 68 2C
+	   20 35 32 30 36
+	   30 31 21 0A 0D
+	   00
+ 00000000			.CODE
+				;-----------External usage--------------------------
+				EXTRN  printf : proc ; we'll use printf
+				;-----------Function definitions--------------------
+ 00000000			sayID PROC
+
+ 00000000  8D 1D 00000000 R	lea ebx, messageFormat ; ebx = &messageFormat
+
+ 00000006  53			push ebx
+ 00000007  E8 00000000 E	call printf
+ 0000000C  83 C4 04		add esp, 4 
+
+ 0000000F  C3			retn
+
+ 00000010			sayID ENDP
+
+				END
+Microsoft (R) Macro Assembler Version 14.11.25547.0	    03/16/18 21:34:09
+AsmSource.asm						     Symbols 2 - 1
+
+
+
+
+Segments and Groups:
+
+                N a m e                 Size     Length   Align   Combine Class
+
+FLAT . . . . . . . . . . . . . .	GROUP
+STACK  . . . . . . . . . . . . .	32 Bit	 00000400 Para	  Stack	  'STACK'	 
+_DATA  . . . . . . . . . . . . .	32 Bit	 00000024 Para	  Public  'DATA'	
+_TEXT  . . . . . . . . . . . . .	32 Bit	 00000010 Para	  Public  'CODE'	
+
+
+Procedures, parameters, and locals:
+
+                N a m e                 Type     Value    Attr
+
+sayID  . . . . . . . . . . . . .	P Near	 00000000 _TEXT	Length= 00000010 Public C
+
+
+Symbols:
+
+                N a m e                 Type     Value    Attr
+
+@CodeSize  . . . . . . . . . . .	Number	 00000000h   
+@DataSize  . . . . . . . . . . .	Number	 00000000h   
+@Interface . . . . . . . . . . .	Number	 00000001h   
+@Model . . . . . . . . . . . . .	Number	 00000007h   
+@code  . . . . . . . . . . . . .	Text   	 _TEXT
+@data  . . . . . . . . . . . . .	Text   	 FLAT
+@fardata?  . . . . . . . . . . .	Text   	 FLAT
+@fardata . . . . . . . . . . . .	Text   	 FLAT
+@stack . . . . . . . . . . . . .	Text   	 FLAT
+messageFormat  . . . . . . . . .	Byte	 00000000 _DATA	
+printf . . . . . . . . . . . . .	L Near	 00000000 FLAT	External C
+
+	   0 Warnings
+	   0 Errors
