@@ -1,0 +1,15 @@
+@echo off
+chcp 1251
+setlocal enabledelayedexpansion
+set num=0
+Set /p extension=Введите расширение подсчитываемых файлов: 
+> E:\report.txt (
+for %%g in ('wmic logicaldisk where "FIleSystem='NTFS'" get name') do(
+    for /r "%%g" %%i in (*.!extension!) do (
+        set /a num+=1
+        echo %%i
+    )
+)) 
+echo Найдено !num! файлов с расширением !extension!
+pause 
+notepad "E:\report.txt"
